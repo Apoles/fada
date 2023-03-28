@@ -80,7 +80,7 @@ export const Footer = () => {
             <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>Products</h6>
             <p className='mb-4'>
               <a href='#!' className=' dark:text-neutral-200'>
-                TRANSFER CART & AGV'S{' '}
+                {"TRANSFER CART & AGV'S"}
               </a>
             </p>
             <p className='mb-4'>
