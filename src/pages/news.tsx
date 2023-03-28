@@ -18,7 +18,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/hello')
+      .get(`${process.env.VERCEL_URL}/api/hello`)
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
   }, []);
