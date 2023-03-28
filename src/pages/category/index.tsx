@@ -75,8 +75,9 @@ const News = () => {
           </div>
           <div className='container   rounded-xl flex flex-wrap  items-center justify-center gap-8 mx-auto '>
             {data ? (
-              data.map((e) => (
+              data.map((e, key) => (
                 <DoubleBorderCard
+                  key={key}
                   url={`/product/${e.url}`}
                   imageUrl='https://www.fada.com.tr/yuklenen/kategoriler/1643095108/b-1643095108-16629865923039.jpg'
                   title={e.title}
