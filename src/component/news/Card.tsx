@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import { env } from 'process';
 
 interface Data {
   id: string;
@@ -18,7 +19,7 @@ export const Cardd = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/hello')
+      .get(`${process.env.VERCEL_URL}/api/hello`)
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
   }, []);
@@ -47,11 +48,6 @@ export const Cardd = () => {
                     width={250}
                     height={250}
                   />
-                  {isHovering && (
-                    <div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-50'>
-                      <FontAwesomeIcon icon={faEnvelope} width={12} height={12} color='white' />
-                    </div>
-                  )}
 
                   <h3 className='text-lg text-gray-900 font-medium title-font mb-4'>{e.title}</h3>
                 </div>

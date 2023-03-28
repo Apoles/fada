@@ -44,7 +44,7 @@ const MainSwiper: React.FC<Props> = ({ slides }) => {
             <div className='absolute top-0 left-0 w-full h-full bg-black opacity-40'></div>
             <Image
               className='h-full w-full object-cover '
-              width={200}
+              width={3000}
               height={200}
               src={slide.imageUrl}
               alt={slide.title}

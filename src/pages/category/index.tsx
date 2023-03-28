@@ -31,7 +31,7 @@ const Category = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`http://localhost:3000/api/getProduct`)
+        .get(`${process.env.VERCEL_URL}/api/getProduct`)
         .then((response) => setData(response.data))
         .catch((error) => {
           console.log('error', error);
