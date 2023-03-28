@@ -17,27 +17,27 @@ export default function App() {
         <code>useScroll</code> with spring smoothing
       </h1>
       <NewsCard
-        imageUrl='https://www.fada.com.tr/yuklenen/webp/kucult.php?link=yuklenen/haberler/1650482458/k-1661945539.jpg'
+        imageUrl='/a/d.jpg'
         title='
               Training in coaching'
       ></NewsCard>{' '}
       <NewsCard
-        imageUrl='https://www.fada.com.tr/yuklenen/webp/kucult.php?link=yuklenen/haberler/1650482458/k-1661945539.jpg'
+        imageUrl='/a/d.jpg'
         title='
               Training in coaching'
       ></NewsCard>
       <NewsCard
-        imageUrl='https://www.fada.com.tr/yuklenen/webp/kucult.php?link=yuklenen/haberler/1650482458/k-1661945539.jpg'
+        imageUrl='/a/d.jpg'
         title='
               Training in coaching'
       ></NewsCard>
       <NewsCard
-        imageUrl='https://www.fada.com.tr/yuklenen/webp/kucult.php?link=yuklenen/haberler/1650482458/k-1661945539.jpg'
+        imageUrl='/a/d.jpg'
         title='
               Training in coaching'
       ></NewsCard>
       <NewsCard
-        imageUrl='https://www.fada.com.tr/yuklenen/webp/kucult.php?link=yuklenen/haberler/1650482458/k-1661945539.jpg'
+        imageUrl='/a/d.jpg'
         title='
               Training in coaching'
       ></NewsCard>

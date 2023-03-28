@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const Footer = () => {
   return (
     <footer className='text-white bg-gradient-to-b from-zinc-900 to-zinc-700 text-center  dark:bg-neutral-600 dark:text-neutral-200 lg:text-left'>
@@ -46,7 +48,7 @@ export const Footer = () => {
         <div className='grid-1 grid gap-8  lg:gap-44 md:grid-cols-2 lg:grid-cols-4'>
           <div className=''>
             <h6 className='mb-4 flex items-center justify-center font-semibold uppercase md:justify-start'>
-              <img className='w-1/2 ' src='/fadaLogoEng.png'></img>
+              <Image className='w-1/2 ' src='/fadaLogoEng.png' width={200} height={200} alt='asd'></Image>
             </h6>
             <p>
               Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur

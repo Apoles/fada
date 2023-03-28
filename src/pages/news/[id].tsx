@@ -89,24 +89,12 @@ const News = () => {
       <hr></hr>
       <br></br>
 
-      <DobuleTitle title='Other News'></DobuleTitle>
+      <DobuleTitle mainTitle='' title='Other News'></DobuleTitle>
 
       <div className='w-full flex flex-row justify-center items-center gap-6 my-12'>
-        <ImageCard
-          title='deneme'
-          description='Deneme yapıyorız'
-          imgUrl='https://www.fada.com.tr/yuklenen/haberler/1655557440/k-1661944854.jpg'
-        ></ImageCard>
-        <ImageCard
-          title='deneme'
-          description='Deneme yapıyorız'
-          imgUrl='https://www.fada.com.tr/yuklenen/haberler/1655557440/k-1661944854.jpg'
-        ></ImageCard>
-        <ImageCard
-          title='deneme'
-          description='Deneme yapıyorız'
-          imgUrl='https://www.fada.com.tr/yuklenen/haberler/1655557440/k-1661944854.jpg'
-        ></ImageCard>
+        <ImageCard title='deneme' description='Deneme yapıyorız' imgUrl='/a/c.jpg'></ImageCard>
+        <ImageCard title='deneme' description='Deneme yapıyorız' imgUrl='/a/c.jpg'></ImageCard>
+        <ImageCard title='deneme' description='Deneme yapıyorız' imgUrl='/a/c.jpng'></ImageCard>
       </div>
 
       <Footer></Footer>

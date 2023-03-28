@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import React from 'react';
 import { SwiperCard } from '../Card/SwiperCard';
+import Image from 'next/image';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -23,13 +24,6 @@ interface Props {
 const MainSwiper: React.FC<Props> = ({ slides }) => {
   return (
     <Swiper
-      style={{
-        '--swiper-pagination-color': '#960018',
-        '--swiper-pagination-bullet-inactive-color': '#999999',
-        '--swiper-pagination-bullet-inactive-opacity': '1',
-        '--swiper-pagination-bullet-size': '16px',
-        '--swiper-pagination-bullet-horizontal-gap': '6px',
-      }}
       modules={[EffectFade]}
       effect='fade'
       spaceBetween={10}
@@ -48,7 +42,13 @@ const MainSwiper: React.FC<Props> = ({ slides }) => {
         <SwiperSlide key={slide.id}>
           <div className='relative h-full flex items-center justify-center brightness-150	'>
             <div className='absolute top-0 left-0 w-full h-full bg-black opacity-40'></div>
-            <img className='h-full w-full object-cover ' src={slide.imageUrl} alt={slide.title} />
+            <Image
+              className='h-full w-full object-cover '
+              width={200}
+              height={200}
+              src={slide.imageUrl}
+              alt={slide.title}
+            />
             <div className='absolute top-40 left-2/3  h-full flex flex-col items-center justify-center text-white'>
               <SwiperCard></SwiperCard>
             </div>

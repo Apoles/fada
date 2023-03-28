@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ProductItem from './ProductItem/ProductItem';
 
 type Value = {
@@ -25,10 +26,13 @@ export default function ProductPropert(prop: Props) {
           ))}
         </ul>
       </div>
-      <img
+      <Image
+        width={200}
+        height={200}
         className='w-1/2   brightness-100  h-full transition duration-300 ease-in-out hover:scale-110 max-w-2xl'
-        src='/BE0-0003-0325.jpg'
-      ></img>{' '}
+        src={'/BE0-0003-0325.jpg'}
+        alt='alt'
+      ></Image>
     </div>
   );
 }

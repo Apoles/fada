@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -38,26 +39,13 @@ const images = [
 
 const IimageSlider: React.FC = () => {
   return (
-    <Swiper
-      style={{
-        '--swiper-pagination-color': '#960018',
-        '--swiper-pagination-bullet-inactive-color': '#999999',
-        '--swiper-pagination-bullet-inactive-opacity': '1',
-        '--swiper-pagination-bullet-size': '16px',
-        '--swiper-pagination-bullet-horizontal-gap': '6px',
-      }}
-      spaceBetween={0}
-      slidesPerView={1}
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 5000 }}
-      loop={true}
-    >
+    <Swiper spaceBetween={0} slidesPerView={1} pagination={{ clickable: true }} autoplay={{ delay: 5000 }} loop={true}>
       {' '}
       {images.map((image, index) => (
         <SwiperSlide key={index}>
           <div className='flex flex-col  my-12 items-center justify-center'>
             <div className=' mx-auto w-1/2  h-max  '>
-              <img className='w-max' src={image.src} alt={image.alt} />
+              <Image className='w-max' src={image.src} alt={image.alt} />
             </div>
             <h1>TESLİMATLARIMIZ DEVAM EDİYOR</h1>
           </div>

@@ -22,13 +22,6 @@ interface Props {
 const ResponsiveSwiper: React.FC<Props> = ({ slides }) => {
   return (
     <Swiper
-      style={{
-        '--swiper-pagination-color': '#960018',
-        '--swiper-pagination-bullet-inactive-color': '#999999',
-        '--swiper-pagination-bullet-inactive-opacity': '1',
-        '--swiper-pagination-bullet-size': '16px',
-        '--swiper-pagination-bullet-horizontal-gap': '6px',
-      }}
       modules={[EffectFade]}
       effect='fade'
       spaceBetween={100}

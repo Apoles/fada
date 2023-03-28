@@ -48,7 +48,7 @@ export const HeaderBottom = () => {
 
       <div className='flex justify-evenly items-center   p-6 '>
         <Link href='/'>
-          <Image src={'/Fada Logo 1@4x.png'} alt='me' width='150' height='150'></Image>
+          <Image src='/Fada Logo 1@4x.png' alt='me' width='150' height='150'></Image>
         </Link>
 
         <div className='flex items-center space-x-6 max-sm:hidden'>
@@ -60,9 +60,9 @@ export const HeaderBottom = () => {
           </div>
 
           <div>
-            <Link href={'/category'}>
+            <a href={'/category'}>
               <button className='peer text-xs font-bold  hover:text-[#960018] text-black'>PRODUCT</button>
-            </Link>
+            </a>
             <Products></Products>
           </div>
           <div className='text-xs font-bold'>

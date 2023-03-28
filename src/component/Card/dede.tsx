@@ -1,4 +1,5 @@
 import { Button } from '@material-tailwind/react';
+import Image from 'next/image';
 
 type Props = {
   image: string;
@@ -11,11 +12,7 @@ export default function Dede() {
   return (
     <div className='max-w-sm w-80  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
       <a href='#'>
-        <img
-          className='rounded-t-lg p-5'
-          src='https://www.fada.com.tr/yuklenen/webp/kucult.php?link=yuklenen/haberler/1643094810/k-1658831948.jpg'
-          alt=''
-        />
+        <Image width={200} height={200} className='rounded-t-lg p-5' src='a/b.jpg' alt='' />
       </a>
       <div className='p-5'>
         <a href='#'>

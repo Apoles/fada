@@ -156,14 +156,11 @@ export default function Home() {
               title='
             Psychology for managers
             '
-              imageUrl='https://qedgroup-cz.s3.eu-central-1.amazonaws.com/pexels_andrea_piacquadio_3771097_32eb686abb.jpg'
+              imageUrl='/a/e.jpg'
             ></NewsCard>
+            <NewsCard title='Sociomapping in schools' imageUrl='/a/f.jpg'></NewsCard>
             <NewsCard
-              title='Sociomapping in schools'
-              imageUrl='https://qedgroup-cz.s3.eu-central-1.amazonaws.com/pexels_cottonbro_studio_4101143_758d09b507.jpg'
-            ></NewsCard>
-            <NewsCard
-              imageUrl='https://www.fada.com.tr/yuklenen/webp/kucult.php?link=yuklenen/haberler/1650482458/k-1661945539.jpg'
+              imageUrl='/a/c.jpg'
               title='
               Training in coaching'
             ></NewsCard>

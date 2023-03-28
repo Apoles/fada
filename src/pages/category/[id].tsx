@@ -70,22 +70,10 @@ const News = () => {
             </Link>
           </div>
           <div className='container   rounded-xl flex flex-wrap  items-center justify-center gap-8 mx-auto '>
-            <DoubleBorderCard
-              imageUrl='https://www.fada.com.tr/yuklenen/kategoriler/1643095108/b-1643095108-16629865923039.jpg'
-              title='Örnek Başlık'
-            />
-            <DoubleBorderCard
-              imageUrl='https://www.fada.com.tr/yuklenen/kategoriler/1643095108/b-1643095108-16629865923039.jpg'
-              title='Örnek Başlık'
-            />
-            <DoubleBorderCard
-              imageUrl='https://www.fada.com.tr/yuklenen/kategoriler/1643095108/b-1643095108-16629865923039.jpg'
-              title='Örnek Başlık'
-            />
-            <DoubleBorderCard
-              imageUrl='https://www.fada.com.tr/yuklenen/kategoriler/1643095108/b-1643095108-16629865923039.jpg'
-              title='Örnek Başlık'
-            />
+            <DoubleBorderCard url='/' imageUrl='/a/a.jpg' title='Örnek Başlık' />
+            <DoubleBorderCard url='/' imageUrl='/a/a.jpg' title='Örnek Başlık' />
+            <DoubleBorderCard url='/' imageUrl='/a/a.jpg' title='Örnek Başlık' />
+            <DoubleBorderCard url='/' imageUrl='/a/a.jpg' title='Örnek Başlık' />
           </div>
         </div>
       </div>

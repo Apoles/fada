@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface CardProps {
@@ -13,7 +14,13 @@ const ImageCard: React.FC<CardProps> = ({ imgUrl, title, description }) => {
         {' '}
         <div className='bg-white rounded-2xl overflow-hidden border-white border-2 shadow-lg'>
           <div className='relative'>
-            <img className='w-52 h-52 transition duration-300 ease-in-out hover:scale-105' src={imgUrl} alt={title} />
+            <Image
+              width={200}
+              height={200}
+              className='w-52 h-52 transition duration-300 ease-in-out hover:scale-105'
+              src={imgUrl}
+              alt={title}
+            />
           </div>
         </div>
         <div className='py-3 px-3'>

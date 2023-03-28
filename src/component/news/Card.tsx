@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 
 interface Data {
   id: string;
@@ -37,12 +38,14 @@ export const Cardd = () => {
               <Link href={`/news/${e.title.toLowerCase().replace(/[ ]/g, '-')}`}>
                 <div className='bg-white p-6 rounded-lg'>
                   <div className=' hover:absolute hover:w-52 hover:h-52 hover:left-1/2 hover:top-1/2 hover:bg-red-200'></div>
-                  <img
+                  <Image
                     onMouseEnter={() => setIsHovering(true)}
                     onMouseLeave={() => setIsHovering(false)}
                     className='lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full max-w-xs  object-center mb-6'
                     src={e.imgUrl}
                     alt='Image Size 720x400'
+                    width={250}
+                    height={250}
                   />
                   {isHovering && (
                     <div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-50'>

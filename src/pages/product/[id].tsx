@@ -15,6 +15,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 import { NotFound } from '@/component/404';
+import Image from 'next/image';
 
 type Data = {
   id: string;
@@ -71,12 +72,14 @@ const News = () => {
             <div className='flex flex-col    items-center justify-center' key={key}>
               <div className='flex flex-row items-start justify-center gap-8 max-w-7xl'>
                 <div className='relative overflow-hidden rounded-3xl'>
-                  <img
+                  <Image
                     className='object-cover   transition duration-300 hover:scale-105 '
                     src={e.imgUrl}
                     style={{ width: 544, height: 320 }}
                     alt='alt'
-                  ></img>
+                    width={544}
+                    height={320}
+                  ></Image>
                 </div>
 
                 <div className='w-1/3 space-y-3 '>

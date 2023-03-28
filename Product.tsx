@@ -5,7 +5,7 @@ export const Productdata = [
     url: 'transfer-cart-agv',
     desciription:
       'FADA develops innovative solutions for the transfer of heavy and geometrically difficult loads with its Transfer Carts, and offers special solutions for sensitive and efficient transport. It is used in the transfer of coils, turbines and blades in the wind energy sector, transformers, molds, sheet metal, large casting parts and various machine parts in industrial plants.They are ergonomic, economical and have the necessary safety equipment with a special design for the needs. They are produced in accordance with the Occupational Health and Safety Management Rules, and when an object or a moving object appears in front of it in the direction it is moving, it is detected by the laser sensors, stops the vehicle movement and reduces the risks of accidents.Industrial transfer carts manufactured by Fada Engineering are basically divided into three main groups. These are rail transfer carts moving in a straight line on the rail, low maneuverability battery powered transfer carts by steering only the front wheels and high maneuverability battery transfer carts that can move in any desired direction by steering all wheels. While the battery powered transfer carts can go in any direction desired, they have various mobility capabilities such as carousel movement, crab movement, diagonal movement. These heavy-duty transport vehicles can be diversified as diesel or battery powered according to the power source.',
-    imgUrl: '',
+    imgUrl: 'yektemak.jpg',
     product: [
       {
         id: '0003',
@@ -13,7 +13,7 @@ export const Productdata = [
         title: 'multidirectional steering battery powered transfer cart(MTC)',
         description:
           'Otonom transfer arabaları düzenli iş akışına sahip işletmelerde sürekliliği sağlamak adına tercih edilen ağır yük transfer arabalarıdır.',
-        imgUrl: 'https://yektamak.com/storage/media/2022/01/otonom-transfer-arabalari-1.jpg',
+        imgUrl: '/a/yektemak.jpg',
         propert: [
           'Capacity: 5 ton to 100 tons',
           'Speed: Up to 30 m/min',
@@ -34,7 +34,7 @@ export const Productdata = [
         type: 'transfer cart',
         title: 'rail transfer cart',
         description: '',
-        imgUrl: 'https://yektamak.com/storage/media/2022/01/otonom-transfer-arabalari-1.jpg',
+        imgUrl: '/a/yektemak.jpg',
         propert: [
           'Capacity: 1 ton to 200 tons',
           'Speed: Up to 60 m/min',
@@ -53,7 +53,7 @@ export const Productdata = [
         type: 'transfer cart',
         title: 'front wheel steering battery powered transfer cart',
         description: '',
-        imgUrl: 'https://yektamak.com/storage/media/2022/01/otonom-transfer-arabalari-1.jpg',
+        imgUrl: '/a/yektemak.jpg',
         propert: [
           'Capacity: 5 ton to 100 tons',
           'Speed: Up to 30 m/min',
@@ -78,14 +78,14 @@ export const Productdata = [
     desciription:
       'Thanks to the Automatic Storage Systems it has produced, FADA Engineering ensures the ergonomic, precise and safe storage of profiles, sheets, pipes, panels, heavy and geometrically difficult parts in industrial facilities. With the Warehouse Management Software it has developed, it offers various solutions for the automatic storage of heavy materials in your warehouses with minimum labor and maximum efficiency. Automatic storage systems, with their long and high structure, save space in the facilities, reduce your costs by automatically performing material transfer and material unloading within seconds. With its engineers who are experts in Storage Systems, FADA offers ideal storage solutions by closely following up-to-date technologies and developing innovative solutions according to your storage needs.',
 
-    imgUrl: 'urll',
+    imgUrl: '/yektemak.jpg',
     product: [
       {
         id: '0001',
         type: 'automated stroge systems',
         title: 'single tower automated stroge system (STSS)',
         description: '',
-        imgUrl: 'https://www.fada.com.tr/yuklenen/urunler/1643278941/k-1643278941-1643722063521.jpg',
+        imgUrl: '/a/dep.jpg',
         propert: [
           'Capacity: Up to 200 tons',
           'Shelf Capacity: Up to 5 tons',
@@ -107,7 +107,7 @@ export const Productdata = [
         type: 'automated stroge systems',
         title: 'double tower automated stroge system (DTSS)',
         description: '',
-        imgUrl: 'urll',
+        imgUrl: '/a/dep.jpg',
         propert: [
           'Capacity: Up to 400 tons',
           'Shelf Capacity: Up to 5 tons',
@@ -129,7 +129,7 @@ export const Productdata = [
         type: 'automated stroge systems',
         title: ' multi-tower automated stroge system (MTSS)',
         description: '',
-        imgUrl: 'https://www.fada.com.tr/yuklenen/urunler/1643278941/k-1643278941-1643722063521.jpg',
+        imgUrl: '/a/dep.jpg',
         propert: [
           'Capacity: Up to 1000 tons',
           'Shelf Capacity: Up to 5 tons',
@@ -151,7 +151,7 @@ export const Productdata = [
         type: 'automated stroge systems',
         title: ' horizontel automated stroge system (HSS)',
         description: '',
-        imgUrl: 'https://www.fada.com.tr/yuklenen/urunler/1643278941/k-1643278941-1643722063521.jpg',
+        imgUrl: '/a/dep.jpg',
         propert: [
           'Capacity: Up to 1000 tons',
           'Shelf Capacity: Up to 5 tons',
@@ -166,7 +166,7 @@ export const Productdata = [
         type: 'automated stroge systems',
         title: ' sheet metal stroge system (SMSS)',
         description: '',
-        imgUrl: 'https://www.fada.com.tr/yuklenen/urunler/1643281172/k-1643281172-16443908401758.png',
+        imgUrl: '/a/dep.jpg',
         propert: [
           'Capacity: Up to 40 tons',
           'Shelf Capacity: Up to 3 tons',
@@ -181,7 +181,7 @@ export const Productdata = [
         type: 'automated stroge systems',
         title: ' profil stroge system (PSS)',
         description: '',
-        imgUrl: 'https://www.fada.com.tr/yuklenen/urunler/1643281225/k-1643281225-16443941066916.png',
+        imgUrl: '/a/dep.jpg',
         propert: [
           'Capacity: Up to 500 tons',
           'Shelf Capacity: Up to 3 tons',

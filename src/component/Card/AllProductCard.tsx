@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -23,7 +24,9 @@ const DoubleBorderCard: React.FC<CardProps> = ({ imageUrl, title, url }) => {
             className={`border-2  rounded-2xl  hover:text-red-500 hover:border-red-500 border-gray-300 p-4 duration-500  cursor-pointer`}
           >
             <div className='relative overflow-hidden w-96 h-52'>
-              <img
+              <Image
+                width={200}
+                height={200}
                 src={imageUrl}
                 alt='resim'
                 className='absolute top-0 left-0 w-full h-full object-cover transition duration-300 hover:scale-110'
