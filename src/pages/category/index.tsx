@@ -50,11 +50,11 @@ const News = () => {
       <HeaderBottom></HeaderBottom>
       <div className='  pt-1  flex  justify-center items-start   bg-gray-200'>
         {' '}
-        <div className='flex m-24    '>
+        <div className='flex m-24'>
           <div className='flex flex-col bg-white  gap-6  p-8 pr-12    rounded-xl '>
             <h1 className='text-xl font-semibold text-red-900 '>Categorys</h1>
             <Link href={``} className='hover:text-red-900'>
-              <p>TRANSFER CART & AGV'S</p>
+              <p>{"TRANSFER CART & AGV'S"}</p>
             </Link>
             <Link href={'/'} className='hover:text-red-900'>
               {' '}

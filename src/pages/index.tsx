@@ -180,7 +180,7 @@ export default function Home() {
           <div className='p-3 space-x-7 flex items-center justify-center '>
             <ProductCard url='' title='LOGISTICS' image='/uygAlan/lojistik/lojistik.jpg'></ProductCard>
             <ProductCard url='' title='AUTOMATİVE' image='/uygAlan/otomotiv/otomotiv.jpg'></ProductCard>
-            <ProductCard url='' children='' title='ENERGY' image='/uygAlan/enerji/enerji.jpg'></ProductCard>
+            <ProductCard url='' title='ENERGY' image='/uygAlan/enerji/enerji.jpg'></ProductCard>
           </div>
           <div className='p-3 space-x-7   flex items-center justify-center '>
             <ProductCard url='' title='IRON AND STEEL' image='/uygAlan/elektrik/elektrik.jpg'></ProductCard>

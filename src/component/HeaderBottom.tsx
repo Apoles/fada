@@ -47,9 +47,9 @@ export const HeaderBottom = () => {
       <motion.div className='progress-bar' style={{ scaleX }} />
 
       <div className='flex justify-evenly items-center   p-6 '>
-        <a href='/'>
+        <Link href='/'>
           <Image src={'/Fada Logo 1@4x.png'} alt='me' width='150' height='150'></Image>
-        </a>
+        </Link>
 
         <div className='flex items-center space-x-6 max-sm:hidden'>
           <div className=''>
@@ -72,7 +72,7 @@ export const HeaderBottom = () => {
           </div>
 
           <div className='w-24  rounded-full	text-xs p-1  border-[#960018] border-2	 text-center  hover:bg-[#960018] hover:text-white hover:duration-300	'>
-            <a href='/contact'>CONTACT</a>
+            <Link href='/contact'>CONTACT</Link>
           </div>
         </div>
         <button

@@ -48,10 +48,7 @@ export const Up = () => {
       </button>
 
       <div className='container mt-4 text-center text-gray-800' style={{ height: '2000px' }}>
-        <p className='mb-4'>
-          Start scrolling the page and a strong <strong>"Back to top" button </strong> will appear in the{' '}
-          <strong>bottom right corner</strong> of the screen.
-        </p>
+        <p className='mb-4'>bakcaz</p>
         <p>Click this button and you will be taken to the top of the page.</p>
       </div>
     </div>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const NotFound = () => {
   return (
     <section className='flex items-center h-full sm:p-16 dark:bg-gray-900 dark:text-gray-100'>
@@ -18,13 +20,13 @@ export const NotFound = () => {
           ></polygon>
         </svg>
         <p className='text-3xl'>Looks like our services are currently offline</p>
-        <a
+        <Link
           rel='noopener noreferrer'
           href='/'
           className='px-8 py-3 font-semibold  hover:text-wine-red  rounded dark:bg-violet-400 dark:text-gray-900'
         >
           Back to homepage
-        </a>
+        </Link>
       </div>
     </section>
   );
