@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { NumberUpCard } from './NumberCardMarchEight';
 
 export const WhyFada = () => {
@@ -24,12 +25,15 @@ export const WhyFada = () => {
         <NumberUpCard end={45} des='Cooperating countries' title=''></NumberUpCard>
         <NumberUpCard end={9000} des='Analysed teams' title=' +'></NumberUpCard>
       </div>
-      <button
-        type='button'
-        className='text-sm my-4 w-44 text-[#960018] hover:text-white border border-[#960018] hover:bg-[#960018] focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full  px-5 py-2.5 text-center mr-2 mb-2 dark:border-[#960018] dark:text-[#960018] dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900'
-      >
-        More about us
-      </button>
+      <Link href={'/company'}>
+        {' '}
+        <button
+          type='button'
+          className='text-sm my-4 w-44 text-[#960018] hover:text-white border border-[#960018] hover:bg-[#960018] focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full  px-5 py-2.5 text-center mr-2 mb-2 dark:border-[#960018] dark:text-[#960018] dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900'
+        >
+          More about us
+        </button>
+      </Link>
     </div>
   );
 };

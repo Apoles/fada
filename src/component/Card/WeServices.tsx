@@ -1,6 +1,6 @@
 export const WeServices = () => {
   return (
-    <div className='bg-cover    bg-center w-full h-full flex  justify-center items-center bg-gradient-to-b from-gray-200 border-t-stone-400 '>
+    <div className='bg-cover    bg-center w-full h-full flex  justify-center items-center '>
       <div className='    w-max mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-6'>
         <div className='  p-12  flex flex-col lg:flex-row justify-center   items-center space-x-24   '>
           <div className='lg:w-1/3 space-y-5 '>
