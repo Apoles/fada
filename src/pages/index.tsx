@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-
+import '@/styles/Home.module.css';
 import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
 import ProductCard from '@/component/Card/ex';
@@ -14,6 +14,10 @@ import { WhyFada } from '@/component/Card/WhyFada';
 import { DobuleTitle } from '@/component/DTittle';
 import SimpleMap from '@/component/Map/Map';
 import FadeAnimate from '@/component/Animation/FadeAnimate';
+import { Suspense } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleDown, faArrowCircleUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 const data = [
   {
@@ -97,14 +101,25 @@ export default function Home() {
           <SwiperComponent slides={data}></SwiperComponent>
         </div>
 
-        <FadeAnimate>
-          {' '}
-          <WhyFada></WhyFada>{' '}
-        </FadeAnimate>
+        <div className='space-y-6 flex flex-col items-center justify-center'>
+          <h1 className='mt-12  font-light text-xs text-black'> SCROOL DOWN </h1>
+          <Link className='duration-500' href={'#main'}>
+            <svg className=' transition-duration-500  animate-bounce w-6 h-6 ...'>
+              <FontAwesomeIcon icon={faArrowDown} size={'xs'}></FontAwesomeIcon>
+            </svg>
+          </Link>
+        </div>
+
+        <div id='main'>
+          <FadeAnimate>
+            {' '}
+            <WhyFada></WhyFada>{' '}
+          </FadeAnimate>
+        </div>
 
         <WeServices></WeServices>
 
-        <div className='flex   flex-col items-center justify-start bg-gray-100 w-full  py-16 '>
+        <div className='flex   flex-col items-center justify-start bg-gradient-to-b from-gray-200 border-t-stone-400  w-full  py-16 '>
           <DobuleTitle title='WHAT WE DO' mainTitle='SMART SOLUTIONS'></DobuleTitle>
           <FadeAnimate>
             <div className='p-3 space-x-7  mt-12 flex '>
@@ -173,7 +188,10 @@ export default function Home() {
             All news
           </button>
         </div>
-        <div className='bg-gray-200 w-full py-24  '>
+        <div className='bg-gray-200 w-full py-14  '>
+          <DobuleTitle mainTitle='APPLICATION AREAS'></DobuleTitle>
+          <br></br>
+
           <div className='p-3 space-x-7 flex items-center justify-center '>
             <ProductCard url='' title='LOGISTICS' image='/uygAlan/lojistik/lojistik.jpg'></ProductCard>
             <ProductCard url='' title='AUTOMATİVE' image='/uygAlan/otomotiv/otomotiv.jpg'></ProductCard>
