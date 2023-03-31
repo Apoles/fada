@@ -6,6 +6,7 @@ import { faPhone, faEnvelope, faLocationCrosshairs, faLocationDot } from '@forta
 import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
 import { Footer } from '@/component/footer/Footer';
+import Breadcrumb from '@/component/BreadCrump';
 
 const Contact5 = () => {
   const [state, setState] = React.useState({
@@ -47,6 +48,8 @@ const Contact5 = () => {
       <section className='bg-white dark:bg-gray-900'>
         <Header></Header>
         <HeaderBottom></HeaderBottom>
+
+        <Breadcrumb></Breadcrumb>
 
         <div className='container lg:px-12 p-6 py-0 mx-auto'>
           <div className='lg:flex lg:items-center lg:-mx-1'>

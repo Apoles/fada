@@ -1,3 +1,4 @@
+import Breadcrumb from '@/component/BreadCrump';
 import { Contact } from '@/component/Card/ContactCard';
 import { ContactT } from '@/component/Card/ContactDoubleCard';
 import { DobuleTitle } from '@/component/DTittle';
@@ -20,6 +21,8 @@ export default function Compnay() {
         <Header></Header>
         <HeaderBottom></HeaderBottom>
         <div className='space-y-24'>
+          <Breadcrumb></Breadcrumb>
+
           <Contact
             mainTitle='ABOUT US'
             title='Many years of experience, complete service and complete customer satisfaction.'
