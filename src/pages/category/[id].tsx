@@ -28,7 +28,7 @@ const News = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`${process.env.VERCEL_URL}/api/blog?id=${id}`)
+        .get(`http://localhost:3000/api/blog?id=${id}`)
         .then((response) => setData(response.data))
         .catch((error) => {
           console.log('error', error);
@@ -44,6 +44,7 @@ const News = () => {
     <>
       <Header></Header>
       <HeaderBottom></HeaderBottom>
+
       <div className='  pt-1  flex  justify-center items-start   bg-gray-200'>
         {' '}
         <div className='flex m-24    '>

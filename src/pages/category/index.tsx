@@ -31,7 +31,7 @@ const Category = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`${process.env.VERCEL_URL}/api/getProduct`)
+        .get(`http://localhost:3000/api/getProduct`)
         .then((response) => setData(response.data))
         .catch((error) => {
           console.log('error', error);
@@ -48,10 +48,9 @@ const Category = () => {
     <>
       <Header></Header>
       <HeaderBottom></HeaderBottom>
-      <div className='  pt-1  flex  justify-center items-start   bg-gray-200'>
-        {' '}
-        <div className='flex m-24'>
-          <div className='flex flex-col bg-white  gap-6  p-8 pr-12    rounded-xl '>
+      <div className='  pt-1  flex  justify-center items-start  mt-24 mb-24  '>
+        <div className='flex  justify-center items-start '>
+          <div className='flex flex-col bg-white  gap-6   pr-12    rounded-xl '>
             <h1 className='text-xl font-semibold text-red-900 '>Categorys</h1>
             <Link href={``} className='hover:text-red-900'>
               <p>{"TRANSFER CART & AGV'S"}</p>

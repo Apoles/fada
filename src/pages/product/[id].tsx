@@ -6,7 +6,7 @@ import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
 import { Titlee } from '@/component/Title';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faEdit, faCheckCircle, faMessage, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faEdit, faCheckCircle, faMessage, faFilePdf, faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import axios from 'axios';
@@ -16,6 +16,10 @@ import { useEffect, useState } from 'react';
 
 import { NotFound } from '@/component/404';
 import Image from 'next/image';
+import Breadcrumb from '@/component/BreadCrump';
+import YouVideoCard from '@/component/Card/YoutbeCard';
+import LogoSpinner from '@/component/Loading';
+import BackToTopButton from '@/component/BackToTop';
 
 type Data = {
   id: string;
@@ -45,7 +49,7 @@ const News = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`${process.env.VERCEL_URL}/api/product?id=${id}`)
+        .get(`http://localhost:3000/api/product?id=${id}`)
         .then((response) => setData(response.data))
         .catch((error) => {
           console.log('error', error);
@@ -61,21 +65,24 @@ const News = () => {
     <>
       <Header></Header>
       <HeaderBottom></HeaderBottom>
+      <Breadcrumb></Breadcrumb>
+
       {data ? (
-        <div className='space-y-12 font-tilt'>
+        <div className='space-y-12 font-tilt flex flex-col items-center justify-center   '>
           <br></br>
+
           <DobuleTitle mainTitle={data.title}></DobuleTitle>
           <br></br>
           <br></br>
 
           {data.product.map((e, key) => (
             <div className='flex flex-col    items-center justify-center' key={key}>
-              <div className='flex flex-row items-start justify-center gap-8 max-w-7xl'>
+              <div className='flex flex-row items-start justify-center gap-8 '>
                 <div className='relative overflow-hidden rounded-3xl'>
                   <Image
                     className='object-cover   transition duration-300 hover:scale-105 '
                     src={e.imgUrl}
-                    style={{ width: 544, height: 320 }}
+                    style={{ width: 544, height: 420 }}
                     alt='alt'
                     width={544}
                     height={320}
@@ -167,10 +174,14 @@ const News = () => {
               </div>
             </div>
           ))}
+          <YouVideoCard></YouVideoCard>
+
+          <BackToTopButton></BackToTopButton>
+
           <Footer></Footer>
         </div>
       ) : (
-        <NotFound></NotFound>
+        <LogoSpinner></LogoSpinner>
       )}
     </>
   );

@@ -49,7 +49,7 @@ const News = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`${process.env.VERCEL_URL}/api/blog?id=${id}`)
+        .get(`http://localhost:3000/api/blog?id=${id}`)
         .then((response) => setData(response.data))
         .catch((error) => {
           console.log('error', error);
@@ -60,6 +60,10 @@ const News = () => {
       console.log('eerror', e);
     });
   }, [id]);
+
+  const bread = data?.title.toLowerCase();
+
+  console.log(`/home/news/${bread}`);
 
   return data! ? (
     <>
