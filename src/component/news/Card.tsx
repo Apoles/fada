@@ -19,14 +19,14 @@ export const Cardd = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.VERCEL_URL}/api/hello`)
+      .get(`http://localhost:3000/api/hello`)
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
   }, []);
 
   return (
-    <section className='text-gray-600 body-font'>
-      <div className='container px-5 py-24 mx-auto max-w-7x1'>
+    <section className='text-gray-600 body-font flex items-center justify-center '>
+      <div className='container px-5 py-24 mx-auto '>
         <div className='flex flex-wrap w-full mb-4 p-4'>
           <div className='w-full mb-6 lg:mb-0'>
             <h1 className='sm:text-4xl text-5xl font-medium  title-font mb-2 text-gray-900'>News</h1>
@@ -35,10 +35,9 @@ export const Cardd = () => {
         </div>
         <div className='flex flex-wrap -m-4  '>
           {data.map((e, key) => (
-            <div key={key} className='xl:w-4/12  md:w-1/2 p-4  '>
+            <div key={key} className='xl:w-4/12 min-w-min min-h-min m-auto   md:w-1/2 p-4  '>
               <Link href={`/news/${e.title.toLowerCase().replace(/[ ]/g, '-')}`}>
-                <div className='bg-white p-6 rounded-lg'>
-                  <div className=' hover:absolute hover:w-52 hover:h-52 hover:left-1/2 hover:top-1/2 hover:bg-red-200'></div>
+                <div className='bg-white p-6 rounded-lg flex  flex-col items-center justify-center'>
                   <Image
                     onMouseEnter={() => setIsHovering(true)}
                     onMouseLeave={() => setIsHovering(false)}
@@ -49,7 +48,7 @@ export const Cardd = () => {
                     height={250}
                   />
 
-                  <h3 className='text-lg text-gray-900 font-medium title-font mb-4'>{e.title}</h3>
+                  <h3 className='text-lg text-center text-gray-900 font-medium title-font mb-4'>{e.title}</h3>
                 </div>
               </Link>
             </div>
