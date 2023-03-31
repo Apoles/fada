@@ -19,6 +19,12 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/component/Swiper/ProductSwiper.tx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/component/Swiper/ProductSwiper.tx",
+    "src/component/Loading.tsx"
+  ],
   "exclude": ["node_modules"]
 }
