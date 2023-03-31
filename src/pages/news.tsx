@@ -6,7 +6,6 @@ import { Cardd } from '@/component/news/Card';
 import { CardComp } from '@/component/news/CardComp';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { routes } from 'rota';
 
 interface Data {
   id: string;
