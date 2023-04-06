@@ -21,6 +21,7 @@ export const NotFound = () => {
         </svg>
         <p className='text-3xl'>Looks like our services are currently offline</p>
         <Link
+          prefetch={false}
           rel='noopener noreferrer'
           href='/'
           className='px-8 py-3 font-semibold  hover:text-wine-red  rounded dark:bg-violet-400 dark:text-gray-900'

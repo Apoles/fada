@@ -17,6 +17,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ separator = '›' }) => {
       <ol className='inline-flex items-center space-x-1 md:space-x-3'>
         <li className='inline-flex items-center'>
           <Link
+            prefetch={false}
             href='/'
             className='  inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white'
           >
@@ -49,6 +50,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ separator = '›' }) => {
                 ></path>
               </svg>
               <Link
+                prefetch={false}
                 className='inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white'
                 href={`/${segments.slice(0, index + 1).join('/')}`}
               >

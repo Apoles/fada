@@ -59,22 +59,22 @@ export const Footer = () => {
           <div className=''>
             <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>QUİCK LİNKS</h6>
             <p className='mb-4'>
-              <Link href='/company' className='hover:text-wine-red dark:text-neutral-200'>
+              <Link prefetch={false} href='/company' className='hover:text-wine-red dark:text-neutral-200'>
                 Company
               </Link>
             </p>
             <p className='mb-4'>
-              <Link href='/product' className=' hover:text-wine-red dark:text-neutral-200'>
+              <Link prefetch={false} href='/product' className=' hover:text-wine-red dark:text-neutral-200'>
                 Product
               </Link>
             </p>
             <p className='mb-4'>
-              <Link href='/news' className='hover:text-wine-red dark:text-neutral-200'>
+              <Link prefetch={false} href='/news' className='hover:text-wine-red dark:text-neutral-200'>
                 News
               </Link>
             </p>
             <p>
-              <Link href='#!' className='hover:text-wine-red dark:text-neutral-200'>
+              <Link prefetch={false} href='#!' className='hover:text-wine-red dark:text-neutral-200'>
                 Contact
               </Link>
             </p>
@@ -82,17 +82,26 @@ export const Footer = () => {
           <div className=''>
             <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>Products</h6>
             <p className='mb-4'>
-              <Link href='/product/transfer-cart-agv' className='hover:text-wine-red dark:text-neutral-200'>
+              <Link
+                prefetch={false}
+                href='/product/transfer-cart-agv'
+                className='hover:text-wine-red dark:text-neutral-200'
+              >
                 {"TRANSFER CART & AGV'S"}
               </Link>
             </p>
             <p className='mb-4'>
-              <Link href='/product/automated-stroge-systems' className='hover:text-wine-red dark:text-neutral-200'>
+              <Link
+                prefetch={false}
+                href='/product/automated-stroge-systems'
+                className='hover:text-wine-red dark:text-neutral-200'
+              >
                 AUTOMATED STORAGE SYSTEMS (ASRS)
               </Link>
             </p>
             <p className='mb-4'>
               <Link
+                prefetch={false}
                 href='/product/positioners-and-rotating-solutions'
                 className='hover:text-wine-red dark:text-neutral-200'
               >
@@ -101,6 +110,7 @@ export const Footer = () => {
             </p>
             <p className='mb-4'>
               <Link
+                prefetch={false}
                 href='/product/intralogistics-and-conveyor-solutions'
                 className='hover:text-wine-red dark:text-neutral-200'
               >
@@ -109,6 +119,7 @@ export const Footer = () => {
             </p>
             <p className='mb-4'>
               <Link
+                prefetch={false}
                 href='/product/cranes-lifting-and-handling-equiments'
                 className='hover:text-wine-red dark:text-neutral-200'
               >
@@ -116,7 +127,11 @@ export const Footer = () => {
               </Link>
             </p>
             <p className='mb-4'>
-              <Link href='/product/ergonomic-access-platforms' className='hover:text-wine-red dark:text-neutral-200'>
+              <Link
+                prefetch={false}
+                href='/product/ergonomic-access-platforms'
+                className='hover:text-wine-red dark:text-neutral-200'
+              >
                 ERGONOMIC ACCESS PLATFORMS
               </Link>
             </p>

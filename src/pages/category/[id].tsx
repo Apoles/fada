@@ -43,23 +43,23 @@ const News = () => {
         <div className='flex m-24    '>
           <div className='flex flex-col bg-white  gap-6  p-8 pr-12    rounded-xl '>
             <h1 className='text-xl font-semibold text-red-900 '>Categorys</h1>
-            <Link href='/' className='hover:text-red-900'>
+            <Link prefetch={false} href='/' className='hover:text-red-900'>
               <p>{"TRANSFER CART & AGV'S"}</p>
             </Link>
-            <Link href={'/'} className='hover:text-red-900'>
+            <Link prefetch={false} href={'/'} className='hover:text-red-900'>
               {' '}
               <p>CRANES / LIFTING & HANDLING EQUIPMENTS</p>
             </Link>
-            <Link href='/' className='hover:text-red-900'>
+            <Link prefetch={false} href='/' className='hover:text-red-900'>
               <p>INTRALOGISTICS & CONVEYOR SOLUTIONS</p>
             </Link>{' '}
-            <Link href='/ ' className='hover:text-red-900'>
+            <Link prefetch={false} href='/ ' className='hover:text-red-900'>
               <p>ERGONOMIC ACCESS PLATFORMS</p>
             </Link>{' '}
-            <Link href='/' className='hover:text-red-900'>
+            <Link prefetch={false} href='/' className='hover:text-red-900'>
               <p>AUTOMATED STORAGE SYSTEMS (ASRS)</p>
             </Link>{' '}
-            <Link href='/' className='hover:text-red-900'>
+            <Link prefetch={false} href='/' className='hover:text-red-900'>
               <p>POSITIONERS AND ROTATING SOLUTIONS</p>
             </Link>
           </div>

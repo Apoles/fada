@@ -62,13 +62,13 @@ const news = [
   },
 ];
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const query = req.query;
   const { id } = query;
 
   if (id) {
     const data = news.find((e) => e.title == id.toString().toUpperCase().replace(/[-]/g, ' ').toString());
-    const dat2 = news.find((e) => e.title.toLowerCase().replace(/[ ]/g, '-') == id);
+    const dat2 = await news.find((e) => e.title.toLowerCase().replace(/[ ]/g, '-') == id);
 
     res.status(200).json(dat2);
   }

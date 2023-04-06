@@ -34,7 +34,7 @@ export const Cardd = () => {
         <div className='flex flex-wrap lg:mx-28  '>
           {data.map((e, key) => (
             <div key={key} className='xl:w-4/12 min-w-min min-h-min m-auto   md:w-1/2 p-4  '>
-              <Link href={`/news/${e.title.toLowerCase().replace(/[ ]/g, '-')}`}>
+              <Link prefetch={false} href={`/news/${e.title.toLowerCase().replace(/[ ]/g, '-')}`}>
                 <div className='bg-white p-6 rounded-lg flex  flex-col items-center justify-center'>
                   <Image
                     onMouseEnter={() => setIsHovering(true)}

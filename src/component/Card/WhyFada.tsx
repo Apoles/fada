@@ -25,7 +25,7 @@ export const WhyFada = () => {
         <NumberUpCard end={45} des='Cooperating countries' title=''></NumberUpCard>
         <NumberUpCard end={9000} des='Analysed teams' title=' +'></NumberUpCard>
       </div>
-      <Link href={'/company'}>
+      <Link prefetch={false} href={'/company'}>
         {' '}
         <button
           type='button'

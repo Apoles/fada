@@ -46,32 +46,34 @@ export const HeaderBottom = () => {
       <motion.div className='progress-bar' style={{ scaleX }} />
 
       <div className='flex justify-evenly items-center   p-6 '>
-        <Link href='/'>
+        <Link prefetch={false} href='/'>
           <Image src='/Fada Logo 1@4x.png' alt='me' width='150' height='150'></Image>
         </Link>
 
         <div className='flex items-center space-x-6 max-sm:hidden'>
           <div className=''>
-            <Link href={'/company'}>
+            <Link prefetch={false} href={'/company'}>
               <button className='peer text-xs font-bold  hover:text-[#960018] text-black'>COMPANY</button>
             </Link>
             <Company></Company>
           </div>
 
           <div>
-            <Link href={'/product'}>
+            <Link prefetch={false} href={'/product'}>
               <button className='peer text-xs font-bold  hover:text-[#960018] text-black'>PRODUCT</button>
             </Link>
             <Products></Products>
           </div>
           <div className='text-xs font-bold'>
-            <Link href={'/news'}>
+            <Link prefetch={false} href={'/news'}>
               <button className='peer text-xs font-bold  hover:text-[#960018] text-black'>NEWS</button>
             </Link>
           </div>
 
           <div className='w-24  rounded-full	text-xs p-1  border-[#960018] border-2	 text-center  hover:bg-[#960018] hover:text-white hover:duration-300	'>
-            <Link href='/contact'>CONTACT</Link>
+            <Link prefetch={false} href='/contact'>
+              CONTACT
+            </Link>
           </div>
         </div>
         <button

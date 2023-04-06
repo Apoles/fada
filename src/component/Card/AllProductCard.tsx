@@ -17,7 +17,7 @@ const DoubleBorderCard: React.FC<CardProps> = ({ imageUrl, title, url }) => {
 
   return (
     <>
-      <Link className='' href={url}>
+      <Link prefetch={false} className='' href={url}>
         {' '}
         <div className='flex   rounded-2xl  max-w-sm  justify-center items-center '>
           <div
