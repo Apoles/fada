@@ -9,7 +9,6 @@ import Link from 'next/link';
 
 export const HeaderBottom = () => {
   const [animateHeader, setAnimateHeader] = useState(false);
-  console.log(animateHeader);
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -60,9 +59,9 @@ export const HeaderBottom = () => {
           </div>
 
           <div>
-            <a href={'/category'}>
+            <Link href={'/product'}>
               <button className='peer text-xs font-bold  hover:text-[#960018] text-black'>PRODUCT</button>
-            </a>
+            </Link>
             <Products></Products>
           </div>
           <div className='text-xs font-bold'>

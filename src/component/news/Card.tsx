@@ -1,10 +1,8 @@
 import axios from 'axios';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Image from 'next/image';
-import { env } from 'process';
 
 interface Data {
   id: string;
@@ -33,7 +31,7 @@ export const Cardd = () => {
             <div className='h-1 w-20 bg-indigo-500 rounded'></div>
           </div>
         </div>
-        <div className='flex flex-wrap -m-4  '>
+        <div className='flex flex-wrap lg:mx-28  '>
           {data.map((e, key) => (
             <div key={key} className='xl:w-4/12 min-w-min min-h-min m-auto   md:w-1/2 p-4  '>
               <Link href={`/news/${e.title.toLowerCase().replace(/[ ]/g, '-')}`}>

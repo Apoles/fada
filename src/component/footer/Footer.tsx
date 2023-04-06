@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Footer = () => {
   return (
-    <footer className='text-white bg-gradient-to-b from-zinc-900 to-zinc-700 text-center  dark:bg-neutral-600 dark:text-neutral-200 lg:text-left'>
+    <footer className='text-white bg-gradient-to-b from-zinc-800 to-zinc-700 text-center  dark:bg-neutral-600 dark:text-neutral-200 lg:text-left'>
       <div className='flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between'>
         <div className='mr-12 hidden lg:block'>
           <span>Get connected with us on social networks:</span>
@@ -58,62 +59,66 @@ export const Footer = () => {
           <div className=''>
             <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>QUİCK LİNKS</h6>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link href='/company' className='hover:text-wine-red dark:text-neutral-200'>
                 Company
-              </a>
+              </Link>
             </p>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link href='/product' className=' hover:text-wine-red dark:text-neutral-200'>
                 Product
-              </a>
+              </Link>
             </p>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link href='/news' className='hover:text-wine-red dark:text-neutral-200'>
                 News
-              </a>
+              </Link>
             </p>
             <p>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link href='#!' className='hover:text-wine-red dark:text-neutral-200'>
                 Contact
-              </a>
+              </Link>
             </p>
           </div>
           <div className=''>
             <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>Products</h6>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link href='/product/transfer-cart-agv' className='hover:text-wine-red dark:text-neutral-200'>
                 {"TRANSFER CART & AGV'S"}
-              </a>
+              </Link>
             </p>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link href='/product/automated-stroge-systems' className='hover:text-wine-red dark:text-neutral-200'>
                 AUTOMATED STORAGE SYSTEMS (ASRS)
-              </a>
+              </Link>
             </p>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link
+                href='/product/positioners-and-rotating-solutions'
+                className='hover:text-wine-red dark:text-neutral-200'
+              >
                 POSITIONERS AND ROTATING SOLUTIONS
-              </a>
+              </Link>
             </p>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link
+                href='/product/intralogistics-and-conveyor-solutions'
+                className='hover:text-wine-red dark:text-neutral-200'
+              >
                 INTRALOGISTICS & CONVEYOR SOLUTIONS
-              </a>
+              </Link>
             </p>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link
+                href='/product/cranes-lifting-and-handling-equiments'
+                className='hover:text-wine-red dark:text-neutral-200'
+              >
                 CRANES / LIFTING & HANDLING EQUIPMENTS
-              </a>
+              </Link>
             </p>
             <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
+              <Link href='/product/ergonomic-access-platforms' className='hover:text-wine-red dark:text-neutral-200'>
                 ERGONOMIC ACCESS PLATFORMS
-              </a>
-            </p>
-            <p className='mb-4'>
-              <a href='#!' className=' dark:text-neutral-200'>
-                CUSTOM MACHINE SOLUTIONS
-              </a>
+              </Link>
             </p>
           </div>
           <div>
@@ -157,9 +162,7 @@ export const Footer = () => {
       </div>
       <div className=' p-6 text-center dark:bg-neutral-700'>
         <span>© 2023 Copyright:</span>
-        <a className='font-semibold  dark:text-neutral-400' href='https://tailwind-elements.com/'>
-          Tailwind Elements
-        </a>
+        <a className='font-semibold  dark:text-neutral-400' href='https:/'></a>
       </div>
     </footer>
   );

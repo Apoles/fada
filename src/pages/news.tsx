@@ -1,9 +1,10 @@
 import Breadcrumb from '@/component/BreadCrump';
+import DoubleBorderCard from '@/component/Card/AllProductCard';
+import { DobuleTitle } from '@/component/DTittle';
 import { Footer } from '@/component/footer/Footer';
 import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
-import { Cardd } from '@/component/news/Card';
-import { CardComp } from '@/component/news/CardComp';
+
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
@@ -26,7 +27,6 @@ const News: React.FC = () => {
     document.title = 'News';
   }, []);
 
-  console.log(data, '==============>');
   return (
     <>
       <div>
@@ -34,9 +34,24 @@ const News: React.FC = () => {
         <HeaderBottom></HeaderBottom>
         <br></br>
         <Breadcrumb></Breadcrumb>
+        <br></br>
+        <br></br>
 
-        <div className='flex flex-col items-center justify-center'>
-          <Cardd></Cardd>
+        <DobuleTitle mainTitle="WHAT'S NEW" title='NEWS'></DobuleTitle>
+
+        <div className='flex flex-col items-center justify-center '>
+          <div className='   grid grid-cols-3 p-4   justify rounded-xl  '>
+            {data.map((e, key) => (
+              <div key={key} className=' mt-4'>
+                <DoubleBorderCard
+                  title={e.title}
+                  imageUrl={e.imgUrl}
+                  url={`/news/${e.title.toLowerCase().replace(/[ ]/g, '-')}`}
+                ></DoubleBorderCard>
+              </div>
+            ))}
+          </div>
+
           <Footer></Footer>
         </div>
       </div>

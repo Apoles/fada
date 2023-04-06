@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import '@/styles/Home.module.css';
 import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
@@ -14,14 +13,21 @@ import { WhyFada } from '@/component/Card/WhyFada';
 import { DobuleTitle } from '@/component/DTittle';
 import SimpleMap from '@/component/Map/Map';
 import FadeAnimate from '@/component/Animation/FadeAnimate';
-import { Suspense } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleDown, faArrowCircleUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll';
+
+import BackToTopButton from '@/component/BackToTop';
 
 const data = [
   {
     id: 1,
+    imageUrl: '/slider/araba.png',
+    title: 'deenemee',
+    description: 'asdasdasdasd',
+  },
+  {
+    id: 5,
     imageUrl: '/slider/one.png',
     title: 'deenemee',
     description: 'asdasdasdasd',
@@ -35,6 +41,12 @@ const data = [
   {
     id: 3,
     imageUrl: '/slider/tree.png',
+    title: 'deenemee',
+    description: 'asdasdasdasd',
+  },
+  {
+    id: 3,
+    imageUrl: '/slider/five.png',
     title: 'deenemee',
     description: 'asdasdasdasd',
   },
@@ -103,7 +115,7 @@ export default function Home() {
 
         <div className='space-y-6 flex flex-col items-center justify-center'>
           <h1 className='mt-12  font-light text-xs text-black'> SCROOL DOWN </h1>
-          <Link className='duration-500' href={'#main'}>
+          <Link className='cursor-pointer duration-500' to='main' smooth={true}>
             <svg className=' transition-duration-500  animate-bounce w-6 h-6 ...'>
               <FontAwesomeIcon icon={faArrowDown} size={'xs'}></FontAwesomeIcon>
             </svg>
@@ -117,47 +129,50 @@ export default function Home() {
           </FadeAnimate>
         </div>
 
-        <WeServices></WeServices>
-
-        <div className='flex   flex-col items-center justify-start bg-gradient-to-b from-gray-200 border-t-stone-400  w-full  py-16 '>
+        <div className='flex   flex-col items-center justify-start  w-full  py-16 '>
           <DobuleTitle title='WHAT WE DO' mainTitle='SMART SOLUTIONS'></DobuleTitle>
           <FadeAnimate>
-            <div className='p-3 space-x-7  mt-12 flex '>
+            <div className='p-3  space-x-7  mt-12 flex '>
               <ProductCard
-                url='katagory/deneme'
-                image='/akilciHizmetler/dondurme.png'
-                title='POSITIONERS AND ROTATING SOLUTIONS'
-              ></ProductCard>
-              <ProductCard
-                url='katagory/deneme'
-                image='/akilciHizmetler/otomatikDepolama.png'
-                title='AUTOMATED STORAGE SYSTEMS (ASRS)'
-              ></ProductCard>
-              <ProductCard
-                url='katagory/deneme'
-                image='/akilciHizmetler/prnomatik.png'
-                title='ERGONOMIC ACCESS PLATFORMS'
-              ></ProductCard>
-            </div>
-            <div className='p-3 space-x-7 mb-24  object-cover  flex   '>
-              <ProductCard
-                url='katagory/deneme'
+                url='/product/transfer-cart-agv'
                 image='/akilciHizmetler/TRANSFER ARABALARI2.png'
                 title="TRANSFER CART & AGV'S"
               ></ProductCard>
               <ProductCard
-                url='katagory/deneme'
+                url='/product/positioners-and-rotating-solutions'
+                image='/akilciHizmetler/dondurme.png'
+                title='POSITIONERS AND ROTATING SOLUTIONS'
+              ></ProductCard>
+              <ProductCard
+                url='/product/automated-stroge-systems'
+                image='/akilciHizmetler/otomatikDepolama.png'
+                title='AUTOMATED STORAGE SYSTEMS (ASRS)'
+              ></ProductCard>
+            </div>
+            <div className='p-3 space-x-7 mb-24  object-cover  flex   '>
+              <ProductCard
+                url='/product/ergonomic-access-platforms'
+                image='/akilciHizmetler/prnomatik.png'
+                title='ERGONOMIC ACCESS PLATFORMS'
+              ></ProductCard>
+              <ProductCard
+                url='/product/intralogistics-and-conveyor-solutions'
                 image='/akilciHizmetler/unileted.jpg'
                 title='INTRALOGISTICS & CONVEYOR SOLUTIONS'
               ></ProductCard>
               <ProductCard
-                url='katagory/deneme'
+                url='product/cranes-lifting-and-handling-equiments'
                 image='/akilciHizmetler/cranes.jpg'
                 title='CRANES / LIFTING & HANDLING EQUIPMENTS'
               ></ProductCard>
             </div>
           </FadeAnimate>
         </div>
+
+        <div className='w-full '>
+          <WeServices></WeServices>
+        </div>
+
         <div className='mt-24 mb-24 flex items-center justify-center h-48  object-cover overflow-hidden'>
           <img src='/hizmetAnlayisimiz/akisSema.png' className='w-3/4  '></img>
         </div>
@@ -188,23 +203,11 @@ export default function Home() {
             All news
           </button>
         </div>
-        <div className='bg-gray-200 w-full py-14  '>
-          <DobuleTitle mainTitle='APPLICATION AREAS'></DobuleTitle>
-          <br></br>
-
-          <div className='p-3 space-x-7 flex items-center justify-center '>
-            <ProductCard url='' title='LOGISTICS' image='/uygAlan/lojistik/lojistik.jpg'></ProductCard>
-            <ProductCard url='' title='AUTOMATİVE' image='/uygAlan/otomotiv/otomotiv.jpg'></ProductCard>
-            <ProductCard url='' title='ENERGY' image='/uygAlan/enerji/enerji.jpg'></ProductCard>
-          </div>
-          <div className='p-3 space-x-7   flex items-center justify-center '>
-            <ProductCard url='' title='IRON AND STEEL' image='/uygAlan/elektrik/elektrik.jpg'></ProductCard>
-            <ProductCard url='' title='AGRICULTURE' image='/uygAlan/tarim/tarim.jpg'></ProductCard>
-            <ProductCard url='' title='SHIPYARD' image='/uygAlan/tersane/tersane.jpg'></ProductCard>
-          </div>
-        </div>
 
         <SimpleMap></SimpleMap>
+
+        <BackToTopButton></BackToTopButton>
+
         <Footer></Footer>
       </main>
     </>

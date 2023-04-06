@@ -12,7 +12,7 @@ type Props = {
 
 const ProductCard = (props: Props) => {
   return (
-    <div className=' hover:shadow-2xl duration-300 pl-2 pr-2 pt-2 pb-2 w-72  justify-center  flex p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
+    <div className=' hover:border-red-500 duration-500 hover:shadow-2xl  pl-2 pr-2 pt-2 pb-2 w-72  justify-center  flex p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
       <Link href={`/${props.url}`}>
         <div className='  m-0 p-0     w-full  items-center justify-center   '>
           <Image

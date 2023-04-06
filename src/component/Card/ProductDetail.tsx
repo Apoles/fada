@@ -12,7 +12,6 @@ type Props = {
 };
 
 export default function ProductPropert(prop: Props) {
-  console.log(prop.Product, '=!!!!!!!!!!!!!!!!^==');
   return (
     <div className='flex flex-row items-start justify-between'>
       <div className='w-1/2   bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>

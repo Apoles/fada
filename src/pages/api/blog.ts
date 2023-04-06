@@ -68,10 +68,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   if (id) {
     const data = news.find((e) => e.title == id.toString().toUpperCase().replace(/[-]/g, ' ').toString());
-    console.log(data);
     const dat2 = news.find((e) => e.title.toLowerCase().replace(/[ ]/g, '-') == id);
 
-    console.log(dat2);
     res.status(200).json(dat2);
   }
 

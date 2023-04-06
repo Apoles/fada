@@ -26,12 +26,9 @@ const Contact5 = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(state);
   };
 
   const updateField = (e: { target: { name: any; value: any } }) => {
-    console.log(e.target.value);
-    console.log(state.fullName, 'asdasd');
     setState({
       ...state,
       [e.target.name]: e.target.value,
@@ -120,7 +117,7 @@ const Contact5 = () => {
               </div>
               <br></br>
               <iframe
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96338.75934193071!2d29.0947072!3d41.012428799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacfb2681faa8d%3A0x49b6e9b9911655b7!2s%C5%9Eehit%20Prof.%20Dr.%20%C4%B0lhan%20Varank%20Sancaktepe%20E%C4%9Fitim%20ve%20Ara%C5%9Ft%C4%B1rma%20Hastanesi!5e0!3m2!1str!2str!4v1678689439104!5m2!1str!2str'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6052.0953335546355!2d30.35661798282531!3d40.67291867064166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb343df644d99%3A0xea58b5ab7657ddb9!2sFADA%20M%C3%BChendislik!5e0!3m2!1str!2str!4v1680677556598!5m2!1str!2str'
                 className='w-full'
                 height='350'
                 style={{ border: 0 }}

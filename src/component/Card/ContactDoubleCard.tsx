@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { DobuleTitle } from '../DTittle';
 import { Titlee } from '../Title';
 
 type Props = {

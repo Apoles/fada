@@ -12,7 +12,6 @@ type Props = {
 };
 
 export default function ProductPropertLeft(prop: Props) {
-  console.log(prop.Product, '=!!!!!!!!!!!!!!!!^==');
   return (
     <div className='flex flex-row items-start justify-between'>
       <Image

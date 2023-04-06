@@ -1,4 +1,3 @@
-import Counter from '../Animation/CountUpAnimation';
 import CountUp from 'react-countup';
 
 export const WeNumbersTree = () => {

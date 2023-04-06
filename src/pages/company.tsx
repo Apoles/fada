@@ -1,7 +1,6 @@
 import Breadcrumb from '@/component/BreadCrump';
 import { Contact } from '@/component/Card/ContactCard';
 import { ContactT } from '@/component/Card/ContactDoubleCard';
-import { DobuleTitle } from '@/component/DTittle';
 import { Footer } from '@/component/footer/Footer';
 import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';

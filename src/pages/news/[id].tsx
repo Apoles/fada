@@ -3,9 +3,7 @@ import { DobuleTitle } from '@/component/DTittle';
 import { Footer } from '@/component/footer/Footer';
 import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
-import IimageSlider from '@/component/Swiper/ProductSwiper';
-import NewsSwiper from '@/component/Swiper/ProductSwiper';
-import { Titlee } from '@/component/Title';
+import LogoSpinner from '@/component/Loading';
 
 import axios from 'axios';
 import { useRouter } from 'next/router';
@@ -51,19 +49,13 @@ const News = () => {
       await axios
         .get(`http://localhost:3000/api/blog?id=${id}`)
         .then((response) => setData(response.data))
-        .catch((error) => {
-          console.log('error', error);
-        });
+        .catch((error) => {});
     };
 
-    fetchData().catch((e) => {
-      console.log('eerror', e);
-    });
+    fetchData().catch((e) => {});
   }, [id]);
 
   const bread = data?.title.toLowerCase();
-
-  console.log(`/home/news/${bread}`);
 
   return data! ? (
     <>
@@ -104,7 +96,10 @@ const News = () => {
       <Footer></Footer>
     </>
   ) : (
-    <p>hata</p>
+    <div>
+      <LogoSpinner></LogoSpinner>
+      <Footer></Footer>
+    </div>
   );
 };
 

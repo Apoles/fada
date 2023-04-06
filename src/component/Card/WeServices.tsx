@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const WeServices = () => {
   return (
     <div className='bg-cover    bg-center w-full h-full flex  justify-center items-center '>
@@ -13,40 +15,44 @@ export const WeServices = () => {
               Find out more about our services{' '}
             </button>{' '}
           </div>
+
           <div className='lg:w-3/5 lg:pl-8 ml-12   space-y-5  flex-col flex items-center   '>
-            <a
-              href='#'
-              className='block max-w-lg p-6 bg-white border border-gray-200 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
-            >
-              <h5 className='mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
-                Individual development{' '}
-              </h5>
-              <p className='font-normal text-sm text-gray-700 dark:text-gray-400'>
-                Coaching, mentoring, mindfulness, management academy, work and personal well-being.{' '}
-              </p>
-            </a>
-            <a
-              href='#'
-              className='block max-w-lg p-6 bg-white border border-gray-200 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
-            >
-              <h5 className='mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white'>Team development</h5>
-              <p className='font-normal text-sm text-gray-700 dark:text-gray-400'>
-                Building of teams and teamwork, high performing teams, leadership development, conflict and problem
-                solving.{' '}
-              </p>
-            </a>
-            <a
-              href='#'
-              className='block max-w-lg p-6 bg-white border border-gray-200 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
-            >
-              <h5 className='mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
-                Organisation and company development{' '}
-              </h5>
-              <p className='font-normal text-sm text-gray-700 dark:text-gray-400'>
-                Organisational development and change management, corporate culture, engagement and mental health of
-                employees, talent programmes, assessment centres.{' '}
-              </p>
-            </a>
+            <div className=' flex items-center justify-center gap-4  max-w-lg p-6 bg-white border border-gray-200 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
+              <Image alt='denemes' width={58} height={100} src={'/icon/worker.png'}></Image>
+              <div className='flex flex-col'>
+                <h5 className='mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
+                  Individual development{' '}
+                </h5>
+                <p className='font-normal text-sm text-gray-700 dark:text-gray-400'>
+                  Coaching, mentoring, mindfulness, management academy, work and personal well-being.{' '}
+                </p>
+              </div>
+            </div>
+            <div className='flex items-center justify-center gap-4 max-w-lg p-6 bg-white border border-gray-200 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
+              <Image alt='denemes' width={58} height={100} src={'/icon/crane.png'}></Image>
+              <div className='flex flex-col'>
+                <h5 className='mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
+                  Team development
+                </h5>
+                <p className='font-normal text-sm text-gray-700 dark:text-gray-400'>
+                  Building of teams and teamwork, high performing teams, leadership development, conflict and problem
+                  solving.{' '}
+                </p>
+              </div>
+            </div>
+            <div className=' max-w-lg p-6 flex items-center justify-center gap-4 bg-white border border-gray-200 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
+              <Image alt='denemes' width={58} height={100} src={'/icon/assortment.png'}></Image>
+
+              <div className='flex flex-col'>
+                <h5 className='mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
+                  Organisation and company development{' '}
+                </h5>
+                <p className='font-normal text-sm text-gray-700 dark:text-gray-400'>
+                  Organisational development and change management, corporate culture, engagement and mental health of
+                  employees, talent programmes, assessment centres.{' '}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import FadeUpAnimation from './ScroolAnimationUp';
 
 const CompanyDes: React.FC<{ imageSrc: string; heading: string; description: string; buttonText: string }> = ({
   imageSrc,

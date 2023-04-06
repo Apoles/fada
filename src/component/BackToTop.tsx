@@ -30,10 +30,10 @@ const BackToTopButton = () => {
     <>
       {showButton && (
         <button
-          className=' animate-bounce     fixed bottom-4 right-4 p-4 rounded-full bg-gray-700 text-white shadow-lg transition-colors duration-300 hover:bg-gray-600'
+          className=' animate-bounce fixed bottom-8 right-8  rounded-full bg-gray-700 text-white shadow-lg transition-colors duration-300 hover:bg-gray-600'
           onClick={handleClick}
         >
-          <FontAwesomeIcon icon={faArrowCircleUp}></FontAwesomeIcon>
+          <FontAwesomeIcon size='3x' icon={faArrowCircleUp}></FontAwesomeIcon>
         </button>
       )}
     </>

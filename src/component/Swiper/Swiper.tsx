@@ -5,7 +5,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import React from 'react';
-import { SwiperCard } from '../Card/SwiperCard';
 import Image from 'next/image';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
@@ -49,9 +48,6 @@ const MainSwiper: React.FC<Props> = ({ slides }) => {
               src={slide.imageUrl}
               alt={slide.title}
             />
-            <div className='absolute top-40 left-2/3  h-full flex flex-col items-center justify-center text-white'>
-              <SwiperCard></SwiperCard>
-            </div>
           </div>
         </SwiperSlide>
       ))}

@@ -4,9 +4,6 @@ import { DobuleTitle } from '@/component/DTittle';
 import { Footer } from '@/component/footer/Footer';
 import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
-import IimageSlider from '@/component/Swiper/ProductSwiper';
-import NewsSwiper from '@/component/Swiper/ProductSwiper';
-import { Titlee } from '@/component/Title';
 
 import axios from 'axios';
 import Link from 'next/link';
@@ -30,14 +27,10 @@ const News = () => {
       await axios
         .get(`http://localhost:3000/api/blog?id=${id}`)
         .then((response) => setData(response.data))
-        .catch((error) => {
-          console.log('error', error);
-        });
+        .catch((error) => {});
     };
 
-    fetchData().catch((e) => {
-      console.log('eerror', e);
-    });
+    fetchData().catch((e) => {});
   }, [id]);
 
   return (
