@@ -18,6 +18,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
 
 import BackToTopButton from '@/component/BackToTop';
+import Git from '@/component/header/gitHeader';
 
 const data = [
   {
@@ -107,7 +108,7 @@ export default function Home() {
 
       <main className='  flex flex-col items-center justify-center font-manrope font-normal	leading-relaxed	'>
         <Header></Header>
-        <HeaderBottom></HeaderBottom>
+        <Git></Git>
 
         <div className='w-full h-full '>
           <SwiperComponent slides={data}></SwiperComponent>
