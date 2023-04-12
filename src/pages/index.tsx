@@ -4,6 +4,7 @@ import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
 import ProductCard from '@/component/Card/ex';
 import SwiperComponent from '@/component/Swiper/Swiper';
+import { motion } from 'framer-motion';
 
 import { NewsCard } from '@/component/Card/NewsCard';
 
@@ -19,6 +20,11 @@ import { Link } from 'react-scroll';
 
 import BackToTopButton from '@/component/BackToTop';
 import Git from '@/component/header/gitHeader';
+import ScrollAnimationWrapper from '@/component/Animation/ScroolAnimation';
+import { useMemo } from 'react';
+import getScrollAnimation from '@/utils/GetScroolAnşmation';
+import getScrollLeftAnimation from '@/utils/LeftAnimateScrool';
+import getScrollRightAnimation from '@/utils/RightAnimateScrool';
 
 const data = [
   {
@@ -97,6 +103,9 @@ const productProperty = [
 ];
 
 export default function Home() {
+  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+  const rightscrollAnimation = useMemo(() => getScrollRightAnimation(), []);
+
   return (
     <>
       <Head>
@@ -124,50 +133,59 @@ export default function Home() {
         </div>
 
         <div id='main'>
-          <FadeAnimate>
-            {' '}
-            <WhyFada></WhyFada>{' '}
-          </FadeAnimate>
+          <WhyFada></WhyFada>
         </div>
 
-        <div className='flex   flex-col items-center justify-start  w-full  py-16 '>
-          <DobuleTitle title='WHAT WE DO' mainTitle='SMART SOLUTIONS'></DobuleTitle>
-          <FadeAnimate>
-            <div className='p-3  space-x-7  mt-12 flex '>
-              <ProductCard
-                url='/product/transfer-cart-agv'
-                image='/akilciHizmetler/TRANSFER ARABALARI2.png'
-                title="TRANSFER CART & AGV'S"
-              ></ProductCard>
-              <ProductCard
-                url='/product/positioners-and-rotating-solutions'
-                image='/akilciHizmetler/dondurme.png'
-                title='POSITIONERS AND ROTATING SOLUTIONS'
-              ></ProductCard>
-              <ProductCard
-                url='/product/automated-stroge-systems'
-                image='/akilciHizmetler/otomatikDepolama.png'
-                title='AUTOMATED STORAGE SYSTEMS (ASRS)'
-              ></ProductCard>
-            </div>
-            <div className='p-3 space-x-7 mb-24  object-cover  flex   '>
-              <ProductCard
-                url='/product/ergonomic-access-platforms'
-                image='/akilciHizmetler/prnomatik.png'
-                title='ERGONOMIC ACCESS PLATFORMS'
-              ></ProductCard>
-              <ProductCard
-                url='/product/intralogistics-and-conveyor-solutions'
-                image='/akilciHizmetler/unileted.jpg'
-                title='INTRALOGISTICS & CONVEYOR SOLUTIONS'
-              ></ProductCard>
-              <ProductCard
-                url='product/cranes-lifting-and-handling-equiments'
-                image='/akilciHizmetler/cranes.jpg'
-                title='CRANES / LIFTING & HANDLING EQUIPMENTS'
-              ></ProductCard>
-            </div>
-          </FadeAnimate>
+        <div className=''>
+          <ScrollAnimationWrapper>
+            <motion.div
+              variants={rightscrollAnimation}
+              className=' '
+              whileHover={{
+                scale: 1.0,
+                transition: {
+                  duration: 0.2,
+                },
+              }}
+            >
+              <DobuleTitle title='WHAT WE DO' mainTitle='SMART SOLUTIONS'></DobuleTitle>
+
+              <div className='p-3   space-x-7  mt-12 flex '>
+                <ProductCard
+                  url='/product/transfer-cart-agv'
+                  image='/akilciHizmetler/TRANSFER ARABALARI2.png'
+                  title="TRANSFER CART & AGV'S"
+                ></ProductCard>
+                <ProductCard
+                  url='/product/positioners-and-rotating-solutions'
+                  image='/akilciHizmetler/dondurme.png'
+                  title='POSITIONERS AND ROTATING SOLUTIONS'
+                ></ProductCard>
+                <ProductCard
+                  url='/product/automated-stroge-systems'
+                  image='/akilciHizmetler/otomatikDepolama.png'
+                  title='AUTOMATED STORAGE SYSTEMS (ASRS)'
+                ></ProductCard>
+              </div>
+              <div className='p-3 space-x-7 mb-24  object-cover  flex   '>
+                <ProductCard
+                  url='/product/ergonomic-access-platforms'
+                  image='/akilciHizmetler/prnomatik.png'
+                  title='ERGONOMIC ACCESS PLATFORMS'
+                ></ProductCard>
+                <ProductCard
+                  url='/product/intralogistics-and-conveyor-solutions'
+                  image='/akilciHizmetler/unileted.jpg'
+                  title='INTRALOGISTICS & CONVEYOR SOLUTIONS'
+                ></ProductCard>
+                <ProductCard
+                  url='product/cranes-lifting-and-handling-equiments'
+                  image='/akilciHizmetler/cranes.jpg'
+                  title='CRANES / LIFTING & HANDLING EQUIPMENTS'
+                ></ProductCard>
+              </div>
+            </motion.div>
+          </ScrollAnimationWrapper>
         </div>
 
         <div className='w-full '>
