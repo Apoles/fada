@@ -18,7 +18,7 @@ function Git() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isScrollingDown]);
 
   return (
     <div
@@ -49,7 +49,7 @@ function Git() {
           bg-white
           rounded-full
           backdrop-blur-sm bg-white/100    
-          ${isScrollingDown ? 'hidden  duration-200' : 'bg-blue-400'}    
+          ${isScrollingDown ? 'hidden  duration-200' : 'bg-white shadow-xl '}    
         `}
       >
         <div>
