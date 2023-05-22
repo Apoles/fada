@@ -16,7 +16,8 @@ import SimpleMap from '@/component/Map/Map';
 import FadeAnimate from '@/component/Animation/FadeAnimate';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-scroll';
+import { Link as _Link } from 'react-scroll';
+import Link from 'next/link';
 
 import BackToTopButton from '@/component/BackToTop';
 import Git from '@/component/header/gitHeader';
@@ -123,11 +124,11 @@ export default function Home() {
         </div>
         <div className='space-y-6 flex flex-col items-center justify-center'>
           <h1 className='mt-12  font-light text-xs text-black'> SCROOL DOWN </h1>
-          <Link className='cursor-pointer duration-500' to='main' smooth={true}>
+          <_Link className='cursor-pointer duration-500' to='main' smooth={true}>
             <svg className=' transition-duration-500  animate-bounce w-6 h-6 ...'>
               <FontAwesomeIcon icon={faArrowDown} size={'xs'}></FontAwesomeIcon>
             </svg>
-          </Link>
+          </_Link>
         </div>
         <div id='main'>
           <WhyFada></WhyFada>
@@ -195,25 +196,27 @@ export default function Home() {
 
           <div className='  flex  items-center justify-center space-x-5  '>
             <NewsCard
+              imageUrl='/a/yeni.jpg'
               title='
-            Psychology for managers
-            '
-              imageUrl='/a/e.jpg'
+              WE CONTINUE TO EXPORT'
             ></NewsCard>
-            <NewsCard title='Sociomapping in schools' imageUrl='/a/f.jpg'></NewsCard>
+            <NewsCard title='READY TO SERVE ON NEW PLANT' imageUrl='/a/yenii.jpg'></NewsCard>
             <NewsCard
               imageUrl='/a/c.jpg'
               title='
-              Training in coaching'
+              SPECIAL DEMANDS REQUIRE SPECIAL SOLUTIONS'
             ></NewsCard>
           </div>
           <br></br>
-          <button
-            type='button'
-            className='my-4 w-40 text-[#960018] hover:text-white border border-[#960018] hover:bg-[#960018] focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-base px-5 py-2.5 text-center mr-2 mb-2 dark:border-[#960018] dark:text-[#960018] dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900'
-          >
-            All news
-          </button>
+          <Link href={'/news'}>
+            {' '}
+            <button
+              type='button'
+              className='my-4 w-40 text-[#960018] hover:text-white border border-[#960018] hover:bg-[#960018] focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-base px-5 py-2.5 text-center mr-2 mb-2 dark:border-[#960018] dark:text-[#960018] dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900'
+            >
+              All news
+            </button>
+          </Link>
         </div>
         <SimpleMap></SimpleMap>
         <BackToTopButton></BackToTopButton>

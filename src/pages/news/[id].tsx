@@ -88,9 +88,9 @@ const News = () => {
       <DobuleTitle mainTitle='' title='Other News'></DobuleTitle>
 
       <div className='w-full flex flex-row justify-center items-center gap-6 my-12'>
-        <ImageCard title='deneme' description='Deneme yapıyorız' imgUrl='/a/c.jpg'></ImageCard>
-        <ImageCard title='deneme' description='Deneme yapıyorız' imgUrl='/a/c.jpg'></ImageCard>
-        <ImageCard title='deneme' description='Deneme yapıyorız' imgUrl='/a/c.jpng'></ImageCard>
+        <ImageCard title='deneme' description='We contunie export' imgUrl='/a/yeni.jpg'></ImageCard>
+        <ImageCard title='deneme' description='Ready to serve on new plant' imgUrl='/a/yenii.jpg'></ImageCard>
+        <ImageCard title='deneme' description='Custom solitions' imgUrl='/a/c.jpg'></ImageCard>
       </div>
 
       <Footer></Footer>
