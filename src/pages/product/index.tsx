@@ -29,7 +29,7 @@ const Category = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`http://localhost:3000/api/getProduct`)
+        .get(`http://localhost:3000/api/getProduct` && `https://fada-one.vercel.app//api/getProduct`)
         .then((response) => setData(response.data))
         .catch((error) => {});
     };

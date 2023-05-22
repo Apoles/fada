@@ -49,7 +49,7 @@ const News = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`http://localhost:3000/api/product?id=${id}`)
+        .get(`http://localhost:3000/api/product?id=${id}` && `https://fada-one.vercel.app/api/product?id=${id}`)
         .then((response) => setData(response.data))
         .catch((error) => {});
     };
