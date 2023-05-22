@@ -5,6 +5,7 @@ import { Footer } from '@/component/footer/Footer';
 import { Header } from '@/component/Header';
 import { HeaderBottom } from '@/component/HeaderBottom';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Compnay() {
   return (
@@ -54,12 +55,12 @@ export default function Compnay() {
             <br></br>
             <br></br>
             <div className='w-full h-23 flex flex-row space-x-20 items-center justify-center '>
-              <img className='h-14' src='/KALITE/FEM.png'></img>
-              <img className='h-14' src='/KALITE/ISO.png'></img>
-              <img className='h-14' src='/KALITE/ISO14001.png'></img>
-              <img className='h-14' src='KALITE/OHSAS.png'></img>
-              <img className='h-14' src='KALITE/TSE.png'></img>
-              <img className='h-14' src='KALITE/tuv.png'></img>
+              <Image alt='ad' className='h-14' src='/KALITE/FEM.png'></Image>
+              <Image alt='ad' className='h-14' src='/KALITE/ISO.png'></Image>
+              <Image alt='ad' className='h-14' src='/KALITE/ISO14001.png'></Image>
+              <Image alt='ad' className='h-14' src='KALITE/OHSAS.png'></Image>
+              <Image alt='ad' className='h-14' src='KALITE/TSE.png'></Image>
+              <Image alt='ad' className='h-14' src='KALITE/tuv.png'></Image>
             </div>
           </div>
           <br></br>

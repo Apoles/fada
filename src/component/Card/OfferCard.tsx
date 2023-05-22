@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useState } from 'react';
 
 interface FormValues {
@@ -52,10 +53,11 @@ const OfferCard = () => {
             <div className=' w-full  flex items-center justify-center '>
               <div className='bg-blue-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden'>
                 <div className='md:flex w-full'>
-                  <img
+                  <Image
                     className='w-1/2'
+                    alt='dde'
                     src='https://thumbs.dreamstime.com/b/businessman-write-transparent-board-contact-us-sunset-ov-over-city-background-sun-s-rays-falling-lens-90532373.jpg'
-                  ></img>
+                  ></Image>
                   <form onSubmit={handleSubmit} className='relative w-full md:w-1/2 py-10 px-5 md:px-10'>
                     <button className=' absolute top-0 right-0 p-4' onClick={() => setShowModal(false)}>
                       Kapat

@@ -26,6 +26,7 @@ import { useMemo } from 'react';
 import getScrollAnimation from '@/utils/GetScroolAnşmation';
 import getScrollLeftAnimation from '@/utils/LeftAnimateScrool';
 import getScrollRightAnimation from '@/utils/RightAnimateScrool';
+import Image from 'next/image';
 
 const data = [
   {
@@ -188,7 +189,7 @@ export default function Home() {
           <WeServices></WeServices>
         </div>
         <div className='mt-24 mb-24 flex items-center justify-center h-48  object-cover overflow-hidden'>
-          <img src='/hizmetAnlayisimiz/akisSema.png' className='w-3/4  '></img>
+          <Image alt='asd' src='/hizmetAnlayisimiz/akisSema.png' className='w-3/4  '></Image>
         </div>
         <div className='flex p-5 shadow-xl  flex-col items-center justify-start  w-full  space-y-5 py-12'>
           <DobuleTitle title='WHAT IS NEW' mainTitle='NEWS '></DobuleTitle>
