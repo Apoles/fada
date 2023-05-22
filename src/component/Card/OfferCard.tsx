@@ -54,6 +54,8 @@ const OfferCard = () => {
               <div className='bg-blue-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden'>
                 <div className='md:flex w-full'>
                   <Image
+                    width={200}
+                    height={200}
                     className='w-1/2'
                     alt='dde'
                     src='https://thumbs.dreamstime.com/b/businessman-write-transparent-board-contact-us-sunset-ov-over-city-background-sun-s-rays-falling-lens-90532373.jpg'

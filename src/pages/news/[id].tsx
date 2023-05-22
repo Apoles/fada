@@ -68,10 +68,11 @@ const News = () => {
             <div className='md:5/12 lg:w-5/12'>
               <Image
                 src={data?.imgUrl}
-                style={{ width: '359px', height: '357px' }}
                 alt='image'
                 className='transition duration-300 ease-in-out hover:scale-105'
                 loading='lazy'
+                width={359}
+                height={357}
               />
             </div>
             <div className='md:7/12 lg:w-6/12'>
