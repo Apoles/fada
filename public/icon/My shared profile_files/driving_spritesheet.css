@@ -1,0 +1,84 @@
+.driving-licence-icon {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/css/driving_spritesheet.png);
+    display: inline-block;
+    color: transparent;
+    width: 110px;
+    height: 50px !important;
+}
+
+.driving-licence-icon-A {
+    width: 40px !important;
+    background-position: -18px -3px
+}
+
+.driving-licence-icon-A1 {
+    width: 40px!important;
+    background-position: -18px -63px
+}
+
+.driving-licence-icon-A2 {
+    width: 45px!important;
+    background-position: -18px -123px
+}
+
+.driving-licence-icon-AM {
+    width: 40px!important;
+    background-position: -18px -179px
+}
+
+.driving-licence-icon-B {
+    width: 50px!important;
+    background-position: -18px -238px
+}
+
+.driving-licence-icon-B1 {
+    width: 58px!important;
+    background-position: -18px -297px
+}
+
+.driving-licence-icon-BE {
+    width: 78px!important;
+    background-position: -18px -359px
+}
+
+.driving-licence-icon-C1 {
+    width: 53px!important;
+    background-position: -18px -415px
+}
+
+.driving-licence-icon-C {
+    width: 60px!important;
+    background-position: -18px -475px
+}
+
+.driving-licence-icon-C1E {
+    width: 85px!important;
+    background-position: -18px -535px
+}
+
+.driving-licence-icon-CE {
+    width: 98px!important;
+    background-position: -18px -595px
+}
+
+.driving-licence-icon-D1 {
+    width: 65px!important;
+    background-position: -18px -653px
+}
+
+.driving-licence-icon-D1E {
+    width: 90px!important;
+    background-position: -18px -713px
+}
+
+.driving-licence-icon-D {
+    width: 93px!important;
+    background-position: -18px -773px
+}
+
+.driving-licence-icon-DE {
+    width: 120px!important;
+    background-position: -18px -833px
+}

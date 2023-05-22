@@ -13,7 +13,7 @@ export const WhyFada = () => {
   return (
     <ScrollAnimationWrapper>
       <motion.div
-        variants={leftscrollAnimation}
+        variants={scrollAnimation}
         className=' flex flex-col  space-y-14 items-center  justify-center  my-20  '
         whileHover={{
           scale: 1.0,

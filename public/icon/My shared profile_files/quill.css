@@ -1,0 +1,209 @@
+.ql-align-left {
+    text-align: left !important;
+}
+
+.ql-align-center {
+    text-align: center !important;
+}
+
+.ql-align-right {
+    text-align: right !important;
+}
+
+.ql-align-justify {
+    text-align: justify!important;
+}
+
+.quill-content.d-inline p.ql-align-center:first-child,
+.quill-content.d-inline p.ql-align-right:first-child {
+    display: inline-block!important;
+}
+
+.quill-content.d-inline ul:first-child .ql-align-right:first-child,
+.quill-content.d-inline ol:first-child .ql-align-right:first-child {
+    display: inline-block!important;
+}
+
+/*
+<p> added to handles personal information that was created without wysiwyg
+ */
+.header__description p {
+    text-align: left;
+}
+
+ol, ul {
+    list-style-position: inside;
+    word-break: break-word;
+}
+
+.quill-content ul,
+.quill-content ol {
+    padding-left: 1.5em;
+    margin-bottom: 0!important;
+}
+
+.quill-content ol > li::before {
+    margin-left: -1.5em;
+    width: 1.5em;
+    word-break: keep-all;
+}
+
+.quill-content ul > li::before {
+    content: '\2022' !important;
+    white-space: nowrap;
+    width: 1.2em;
+    margin-left: -1.5em;
+    margin-right: 0.3em;
+    text-align: right;
+}
+
+
+ol li {
+    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+    counter-increment: list-0;
+}
+ol li::before {
+    content: counter(list-0, decimal) '. ';
+}
+ol li.ql-indent-1 {
+    counter-increment: list-1;
+}
+ol li.ql-indent-1::before {
+    content: counter(list-1, lower-alpha) '. ';
+}
+ol li.ql-indent-1 {
+    counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+ol li.ql-indent-2 {
+    counter-increment: list-2;
+}
+ol li.ql-indent-2::before {
+    content: counter(list-2, lower-roman) '. ';
+}
+ol li.ql-indent-2 {
+    counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+ol li.ql-indent-3 {
+    counter-increment: list-3;
+}
+ol li.ql-indent-3::before {
+    content: counter(list-3, decimal) '. ';
+}
+ol li.ql-indent-3 {
+    counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+}
+ol li.ql-indent-4 {
+    counter-increment: list-4;
+}
+ol li.ql-indent-4::before {
+    content: counter(list-4, lower-alpha) '. ';
+}
+ol li.ql-indent-4 {
+    counter-reset: list-5 list-6 list-7 list-8 list-9;
+}
+ol li.ql-indent-5 {
+    counter-increment: list-5;
+}
+ol li.ql-indent-5::before {
+    content: counter(list-5, lower-roman) '. ';
+}
+ol li.ql-indent-5 {
+    counter-reset: list-6 list-7 list-8 list-9;
+}
+ol li.ql-indent-6 {
+    counter-increment: list-6;
+}
+ol li.ql-indent-6::before {
+    content: counter(list-6, decimal) '. ';
+}
+ol li.ql-indent-6 {
+    counter-reset: list-7 list-8 list-9;
+}
+ol li.ql-indent-7 {
+    counter-increment: list-7;
+}
+ol li.ql-indent-7::before {
+    content: counter(list-7, lower-alpha) '. ';
+}
+ol li.ql-indent-7 {
+    counter-reset: list-8 list-9;
+}
+ol li.ql-indent-8 {
+    counter-increment: list-8;
+}
+ol li.ql-indent-8::before {
+    content: counter(list-8, lower-roman) '. ';
+}
+ol li.ql-indent-8 {
+    counter-reset: list-9;
+}
+ol li.ql-indent-9 {
+    counter-increment: list-9;
+}
+ol li.ql-indent-9::before {
+    content: counter(list-9, decimal) '. ';
+}
+
+.quill-content ol > li,
+.quill-content ul > li {
+    padding-left: 1.5em;
+    list-style-type: none!important;
+}
+
+.ql-indent-1 {
+    padding-left: 3em;
+}
+.ql-indent-2 {
+    padding-left: 6em;
+}
+.ql-indent-3 {
+    padding-left: 9em;
+}
+.ql-indent-4 {
+    padding-left: 12em;
+}
+.ql-indent-5 {
+    padding-left: 15em;
+}
+.ql-indent-6 {
+    padding-left: 18em;
+}
+.ql-indent-7 {
+    padding-left: 21em;
+}
+.ql-indent-8 {
+    padding-left: 24em;
+}
+
+.quill-content ul > li.ql-indent-1,
+.quill-content ol > li.ql-indent-1 {
+    padding-left: 4.5em;
+}
+.quill-content ul > li.ql-indent-2,
+.quill-content ol > li.ql-indent-2 {
+    padding-left: 7.5em;
+}
+.quill-content ul > li.ql-indent-3,
+.quill-content ol > li.ql-indent-3 {
+    padding-left: 10.5em;
+}
+.quill-content ul > li.ql-indent-4,
+.quill-content ol > li.ql-indent-4 {
+    padding-left: 13.5em;
+}
+.quill-content ul > li.ql-indent-5,
+.quill-content ol > li.ql-indent-5 {
+    padding-left: 16.5em;
+}
+.quill-content ul > li.ql-indent-6,
+.quill-content ol > li.ql-indent-6 {
+    padding-left: 19.5em;
+}
+.quill-content ul > li.ql-indent-7,
+.quill-content ol > li.ql-indent-7 {
+    padding-left: 22.5em;
+}
+.quill-content ul > li.ql-indent-8,
+.quill-content ol > li.ql-indent-8 {
+    padding-left: 25.5em;
+}

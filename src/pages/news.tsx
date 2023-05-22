@@ -20,7 +20,7 @@ const News: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/hello`)
+      .get(`http://localhost:3000/api/hello` && `https://fada-one.vercel.app/api/hello`)
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
 

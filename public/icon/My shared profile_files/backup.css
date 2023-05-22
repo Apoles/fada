@@ -1,0 +1,397 @@
+/* BEGIN*/
+ul.drivingLicence .css-label.css-label.css-label.css-label {
+    box-sizing: border-box;
+    width: 45px !important;
+    margin-left: 30px;
+    text-indent: 20px;
+    padding-left: 43px;
+    background-color: #ECF0F4 !important;
+    border: 1px solid rgba(43, 72, 104, 0.3)
+}
+
+ul.drivingLicence .css-label.css-label.css-label.css-label:after {
+    top: 75% !important;
+    font-size: 22px;
+    left: 24px
+}
+
+form#Form\:LearnerInfo\.Skills\.Driving label:first-child {
+    margin-bottom: 25px
+}
+
+ul.drivingLicence {
+    margin: 0 -62px 20px 0
+}
+
+ul.drivingLicence li {
+    margin: -4px 4% 10px 0;
+    display: inline-block;
+    width: 20%;
+    height: 120px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    position: relative;
+    padding-right: 0
+}
+
+ul.drivingLicence li.empty:hover {
+    background: none
+}
+
+ul.drivingLicence li:hover, ul.drivingLicence li.tap-hover {
+    background-color: #f4f4f4
+}
+
+ul.drivingLicence li:hover label, ul.drivingLicence li.tap-hover label {
+    color: #494848
+}
+
+ul.drivingLicence li.selected {
+    background-color: #ebebeb;
+    border: 1px solid #bcbcbc
+}
+
+ul.drivingLicence li.selected label {
+    color: #000
+}
+
+ul.drivingLicence li .icon {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/images/driving_spritesheet.png?version=5.0.67");
+    font-size: 0px;
+    color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -60px;
+    width: 92px;
+    height: 60px
+}
+
+.driving-licence-list-mixin {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/images/sprites/driving-licence-icons.png?version=5.0.67");
+    display: inline-block;
+    color: #101010;
+    text-indent: 35px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    padding: 5px 0 7px;
+    width: 11rem;
+    height: 12px
+}
+
+div.driving-licence-list {
+    margin-left: -3rem
+}
+
+div.driving-licence-list ol {
+    display: inline;
+    margin: 2px 3px 4px 5px;
+    text-align: left
+}
+
+div.driving-licence-list ol li {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/images/sprites/driving-licence-icons.png?version=5.0.67");
+    display: inline-block;
+    color: #101010;
+    text-indent: 35px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    padding: 5px 0 7px;
+    width: 11rem;
+    height: 12px
+}
+
+div.driving-licence-list ol li.load {
+    background-position: -3px 2px
+}
+
+div.driving-licence-list ol li.persons {
+    background-position: 0 -37px
+}
+
+div.driving-licence-list ol li.limit {
+    background-position: 0 -77px
+}
+
+div.driving-licence-list ol li.capacity {
+    background-position: 0 -117px
+}
+
+div.driving-licence-list ol li.speed {
+    background-position: 0 -157px
+}
+
+div.driving-licence-list ol li.kw {
+    background-position: -2px -197px
+}
+
+div.driving-licence-list ol li.mass {
+    background-position: 0 -237px
+}
+
+div.driving-licence-list ol li.length {
+    background-position: 0 -277px
+}
+
+div.driving-licence-list ol li.age {
+    background-position: 0 -317px
+}
+
+div.driving-licence-list ol li:hover {
+    background-color: #fff
+}
+
+ul.drivingLicence li.empty .icon {
+    background: transparent
+}
+
+li.driving-licence-A:hover .icon, li.driving-licence-A.tap-hover .icon {
+    background-position: -280px 7px
+}
+
+li.driving-licence-A.selected .icon, li.driving-licence-A.selected:hover .icon, li.driving-licence-A.selected.tap-hover .icon {
+    background-position: -140px 7px
+}
+
+li.driving-licence-A .icon {
+    background-position: 0 7px
+}
+
+li.driving-licence-A1:hover .icon, li.driving-licence-A1.tap-hover .icon {
+    background-position: -280px -53px
+}
+
+li.driving-licence-A1.selected .icon, li.driving-licence-A1.selected:hover .icon, li.driving-licence-A1.selected.tap-hover .icon {
+    background-position: -140px -53px
+}
+
+li.driving-licence-A1 .icon {
+    background-position: 0 -53px
+}
+
+li.driving-licence-A2:hover .icon, li.driving-licence-A2.tap-hover .icon {
+    background-position: -280px -113px
+}
+
+li.driving-licence-A2.selected .icon, li.driving-licence-A2.selected:hover .icon, li.driving-licence-A2.selected.tap-hover .icon {
+    background-position: -140px -113px
+}
+
+li.driving-licence-A2 .icon {
+    background-position: 0 -113px
+}
+
+li.driving-licence-AM:hover .icon, li.driving-licence-AM.tap-hover .icon {
+    background-position: -280px -173px
+}
+
+li.driving-licence-AM.selected .icon, li.driving-licence-AM.selected:hover .icon, li.driving-licence-AM.selected.tap-hover .icon {
+    background-position: -140px -173px
+}
+
+li.driving-licence-AM .icon {
+    background-position: 0 -173px
+}
+
+li.driving-licence-B:hover .icon, li.driving-licence-B.tap-hover .icon {
+    background-position: -280px -233px
+}
+
+li.driving-licence-B.selected .icon, li.driving-licence-B.selected:hover .icon, li.driving-licence-B.selected.tap-hover .icon {
+    background-position: -140px -233px
+}
+
+li.driving-licence-B .icon {
+    background-position: 0 -233px
+}
+
+li.driving-licence-B1:hover .icon, li.driving-licence-B1.tap-hover .icon {
+    background-position: -280px -293px
+}
+
+li.driving-licence-B1.selected .icon, li.driving-licence-B1.selected:hover .icon, li.driving-licence-B1.selected.tap-hover .icon {
+    background-position: -140px -293px
+}
+
+li.driving-licence-B1 .icon {
+    background-position: 0 -293px
+}
+
+li.driving-licence-BE:hover .icon, li.driving-licence-BE.tap-hover .icon {
+    background-position: -280px -353px
+}
+
+li.driving-licence-BE.selected .icon, li.driving-licence-BE.selected:hover .icon, li.driving-licence-BE.selected.tap-hover .icon {
+    background-position: -140px -353px
+}
+
+li.driving-licence-BE .icon {
+    background-position: 0 -353px
+}
+
+li.driving-licence-C1:hover .icon, li.driving-licence-C1.tap-hover .icon {
+    background-position: -280px -413px
+}
+
+li.driving-licence-C1.selected .icon, li.driving-licence-C1.selected:hover .icon, li.driving-licence-C1.selected.tap-hover .icon {
+    background-position: -140px -413px
+}
+
+li.driving-licence-C1 .icon {
+    background-position: 0 -413px
+}
+
+li.driving-licence-C:hover .icon, li.driving-licence-C.tap-hover .icon {
+    background-position: -280px -473px
+}
+
+li.driving-licence-C.selected .icon, li.driving-licence-C.selected:hover .icon, li.driving-licence-C.selected.tap-hover .icon {
+    background-position: -140px -473px
+}
+
+li.driving-licence-C .icon {
+    background-position: 0 -473px
+}
+
+li.driving-licence-C1E:hover .icon, li.driving-licence-C1E.tap-hover .icon {
+    background-position: -280px -533px
+}
+
+li.driving-licence-C1E.selected .icon, li.driving-licence-C1E.selected:hover .icon, li.driving-licence-C1E.selected.tap-hover .icon {
+    background-position: -140px -533px
+}
+
+li.driving-licence-C1E .icon {
+    background-position: 0 -533px
+}
+
+li.driving-licence-CE:hover .icon, li.driving-licence-CE.tap-hover .icon {
+    background-position: -280px -593px
+}
+
+li.driving-licence-CE.selected .icon, li.driving-licence-CE.selected:hover .icon, li.driving-licence-CE.selected.tap-hover .icon {
+    background-position: -140px -593px
+}
+
+li.driving-licence-CE .icon {
+    background-position: 0 -593px
+}
+
+li.driving-licence-D1:hover .icon, li.driving-licence-D1.tap-hover .icon {
+    background-position: -280px -653px
+}
+
+li.driving-licence-D1.selected .icon, li.driving-licence-D1.selected:hover .icon, li.driving-licence-D1.selected.tap-hover .icon {
+    background-position: -140px -653px
+}
+
+li.driving-licence-D1 .icon {
+    background-position: 0 -653px
+}
+
+li.driving-licence-D1E:hover .icon, li.driving-licence-D1E.tap-hover .icon {
+    background-position: -280px -713px
+}
+
+li.driving-licence-D1E.selected .icon, li.driving-licence-D1E.selected:hover .icon, li.driving-licence-D1E.selected.tap-hover .icon {
+    background-position: -140px -713px
+}
+
+li.driving-licence-D1E .icon {
+    background-position: 0 -713px
+}
+
+li.driving-licence-D:hover .icon, li.driving-licence-D.tap-hover .icon {
+    background-position: -280px -773px
+}
+
+li.driving-licence-D.selected .icon, li.driving-licence-D.selected:hover .icon, li.driving-licence-D.selected.tap-hover .icon {
+    background-position: -140px -773px
+}
+
+li.driving-licence-D .icon {
+    background-position: 0 -773px
+}
+
+li.driving-licence-DE:hover .icon, li.driving-licence-DE.tap-hover .icon {
+    background-position: -280px -833px
+}
+
+li.driving-licence-DE.selected .icon, li.driving-licence-DE.selected:hover .icon, li.driving-licence-DE.selected.tap-hover .icon {
+    background-position: -140px -833px
+}
+
+li.driving-licence-DE .icon {
+    background-position: 0 -833px
+}
+
+ul.drivingLicence li.driving-licence-C1, ul.drivingLicence li.driving-licence-C1E, ul.drivingLicence li.driving-licence-C, ul.drivingLicence li.driving-licence-CE, ul.drivingLicence li.driving-licence-D1, ul.drivingLicence li.driving-licence-D1E, ul.drivingLicence li.driving-licence-D, ul.drivingLicence li.driving-licence-DE {
+    width: 20%;
+    padding-right: 0%;
+    margin-right: 4%
+}
+
+ul.drivingLicence li.driving-licence-C1 .icon, ul.drivingLicence li.driving-licence-C1E .icon, ul.drivingLicence li.driving-licence-C .icon, ul.drivingLicence li.driving-licence-CE .icon, ul.drivingLicence li.driving-licence-D1 .icon, ul.drivingLicence li.driving-licence-D1E .icon, ul.drivingLicence li.driving-licence-D .icon, ul.drivingLicence li.driving-licence-DE .icon {
+    width: 160px
+}
+
+ul.drivingLicence li.driving-licence-DE .icon {
+    margin-left: -79px
+}
+
+ul.drivingLicence li.driving-licence-BE {
+    margin-right: 7%
+}
+
+menu.Driving {
+    display: inline-block;
+    width: 49%
+}
+
+input[type=checkbox].driving-licence.css-checkbox+label.css-label {
+    display: block;
+    margin: 70px auto 0
+}
+
+@media screen and (max-width:640px) {
+    ul.drivingLicence .css-label.css-label.css-label.css-label {
+        margin-left: 0
+    }
+
+    ul.drivingLicence .css-label.css-label.css-label.css-label:after {
+        left: -7px
+    }
+
+    ul.drivingLicence li {
+        width: 40%
+    }
+
+    ul.drivingLicence li.driving-licence-C1, ul.drivingLicence li.driving-licence-C1E, ul.drivingLicence li.driving-licence-C, ul.drivingLicence li.driving-licence-CE, ul.drivingLicence li.driving-licence-D1, ul.drivingLicence li.driving-licence-D1E, ul.drivingLicence li.driving-licence-D, ul.drivingLicence li.driving-licence-DE {
+        width: 40%
+    }
+
+    ul.drivingLicence li.driving-licence-BE {
+        margin-right: 15px
+    }
+
+    ul.drivingLicence li .icon {
+        left: 35px
+    }
+
+    .driving-licence-AM .tooltip {
+        top: -120px !important
+    }
+
+    menu.Driving {
+        width: 100%
+    }
+}
+
+/*END*/

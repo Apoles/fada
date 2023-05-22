@@ -1,7 +1,7 @@
 export default function getScrollLeftAnimation() {
   return {
     offscreen: {
-      x: -150,
+      x: -200,
       opacity: 0,
     },
     onscreen: ({ duration = 2 } = {}) => ({

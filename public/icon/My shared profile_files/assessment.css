@@ -1,0 +1,117 @@
+.assessment-result {
+    border-radius: 3px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.assessment-result .item {
+    width: 100%;
+    margin: 0.3rem 0;
+    border-top: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.assessment-result .item:nth-child(2) {
+    border-top: none;
+}
+
+.assessment-result .item .img-icon.img-fluid {
+    width: 32px;
+    height: 32px;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.assessment-result .competence-area {
+    flex-grow: 3;
+    min-width: 250px;
+}
+    .assessment-result .competence-area p.title{
+        display: inline-block;
+    }
+.assessment-result .proficiency-level {
+    padding-right: 1em;
+    flex-grow: 2;
+    min-width: 150px;
+    width: 150px;
+}
+
+.assessment-result p {
+    margin-top: 1rem;
+}
+
+.assessment-result p.notice {
+    font-style: italic;
+}
+
+.assessment-result .competence-area p ,
+.assessment-result .proficiency-level p {
+    font-weight: bold;
+}
+
+.assessment-result .proficiency-level p {
+    text-align: right;
+}
+.assessment-result .ca-level {
+    width: 265px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .assessment-result .item {
+        padding: 1rem;
+    }
+
+    .assessment-result .item p,
+    .assessment-result .item .img-icon.img-fluid {
+        margin: 0.1rem 0.1rem 0.3rem 0;
+    }
+
+    .assessment-result .item .img-icon.img-fluid {
+        width: 16px;
+        height: 16px;
+    }
+
+    .assessment-result .item p.title {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+    }
+
+    .assessment-result .item p.proficiency-level {
+        text-align: left;
+    }
+}
+
+
+.proficiency-bar-item {
+    background-color: #ddd;
+    display: inline-block;
+    width: 27px;
+    height: 0.9rem;
+    margin: 0 0 0 3px;
+    border: 0;
+}
+
+.proficiency-bar-item.bg-gradient:nth-child(1) {
+    background: linear-gradient(90deg, #073f70 0, #19537e 100%);
+}
+.proficiency-bar-item.bg-gradient:nth-child(2) {
+    background: linear-gradient(90deg, #19537e 0, #2c6b91 100%);
+}
+.proficiency-bar-item.bg-gradient:nth-child(3) {
+    background: linear-gradient(90deg, #2c6b91 0, #4185a4 100%);
+}
+.proficiency-bar-item.bg-gradient:nth-child(4) {
+    background: linear-gradient(90deg, #4185a4 0, #389194 100%);
+}
+.proficiency-bar-item.bg-gradient:nth-child(5) {
+    background: linear-gradient(90deg, #389194 0, #329d82 100%);
+}
+.proficiency-bar-item.bg-gradient:nth-child(6) {
+    background: linear-gradient(90deg, #329d82 0, #42b18f 100%);
+}
+

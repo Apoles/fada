@@ -117,12 +117,10 @@ export default function Home() {
 
       <main className='  flex flex-col items-center justify-center font-manrope font-normal	leading-relaxed	'>
         <Header></Header>
-        <Git></Git>
-
+        <HeaderBottom></HeaderBottom>
         <div className='w-full h-full '>
           <SwiperComponent slides={data}></SwiperComponent>
         </div>
-
         <div className='space-y-6 flex flex-col items-center justify-center'>
           <h1 className='mt-12  font-light text-xs text-black'> SCROOL DOWN </h1>
           <Link className='cursor-pointer duration-500' to='main' smooth={true}>
@@ -131,18 +129,16 @@ export default function Home() {
             </svg>
           </Link>
         </div>
-
         <div id='main'>
           <WhyFada></WhyFada>
         </div>
-
         <div className=''>
           <ScrollAnimationWrapper>
             <motion.div
-              variants={rightscrollAnimation}
+              variants={scrollAnimation}
               className=' '
               whileHover={{
-                scale: 1.0,
+                scale: 1,
                 transition: {
                   duration: 0.2,
                 },
@@ -187,15 +183,12 @@ export default function Home() {
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
-
         <div className='w-full '>
           <WeServices></WeServices>
         </div>
-
         <div className='mt-24 mb-24 flex items-center justify-center h-48  object-cover overflow-hidden'>
           <img src='/hizmetAnlayisimiz/akisSema.png' className='w-3/4  '></img>
         </div>
-
         <div className='flex p-5 shadow-xl  flex-col items-center justify-start  w-full  space-y-5 py-12'>
           <DobuleTitle title='WHAT IS NEW' mainTitle='NEWS '></DobuleTitle>
           <br></br>
@@ -222,11 +215,8 @@ export default function Home() {
             All news
           </button>
         </div>
-
         <SimpleMap></SimpleMap>
-
         <BackToTopButton></BackToTopButton>
-
         <Footer></Footer>
       </main>
     </>

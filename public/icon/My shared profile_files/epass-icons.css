@@ -1,0 +1,20 @@
+
+/* font name: Glyphter */
+@font-face {
+    font-family: 'epass-icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://europa.eu/europass/eportfolio/api/eprofile/static/share-profile/fonts/Glyphter.ttf') format('truetype');
+}
+
+i.ei {
+    font-family: 'epass-icons';
+    font-weight: normal;
+    font-style: normal;
+}
+
+i.ei.ei-digcomp-1:before { content: "A"; }
+i.ei.ei-digcomp-2:before { content: "B"; }
+i.ei.ei-digcomp-3:before { content: "C"; }
+i.ei.ei-digcomp-4:before { content: "D"; }
+i.ei.ei-digcomp-5:before { content: "E"; }
