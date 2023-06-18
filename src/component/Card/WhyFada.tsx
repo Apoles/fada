@@ -22,12 +22,12 @@ export const WhyFada = () => {
           },
         }}
       >
-        <div className='flex flex-col space-y-2 items-center justify-center  '>
+        <div className='  flex flex-col space-y-2 items-center justify-center  '>
           <p className='text-base font-sm font-tilt text-[#960018] '>WHO WE ARE</p>
           <p className='text-4xl font-extrabold font-tilt '>WHY FADA? </p>
         </div>
 
-        <p className=' flex  w-1/2  text-sm text-gray-900  text-center  items-center justify-center '>
+        <p className=' flex  w-1/2 max-sm:w-full max-sm:px-5  text-sm text-gray-900  text-center  items-center justify-center '>
           Specialized in design, production and sales of many products such as Battery Powered Transfer Carts,
           Intralogistics and Automated Storage Solutions, Conveyor Systems, Positioners and Rotating Solutions, Lifting
           and Handling Equipments. FADA was established to produce special solutions for machinery and automation
@@ -38,7 +38,7 @@ export const WhyFada = () => {
         <br></br>
         <br></br>
 
-        <div className=' flex items-center space-x-24 justify-center w-full '>
+        <div className=' max-sm:flex-col  max-sm:w-max max-sm:space-x-0 max-sm:space-y-6  flex items-center space-x-24 justify-center w-full '>
           <NumberUpCard title=' +' end={700} des='Project'></NumberUpCard>
           <NumberUpCard end={15} des='Year of Experience' title=' +'></NumberUpCard>
           <NumberUpCard end={8000} des='Totel Area' title=' mm²'></NumberUpCard>

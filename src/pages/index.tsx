@@ -138,7 +138,7 @@ export default function Home() {
           <ScrollAnimationWrapper>
             <motion.div
               variants={scrollAnimation}
-              className=' '
+              className='  '
               whileHover={{
                 scale: 1,
                 transition: {
@@ -148,7 +148,7 @@ export default function Home() {
             >
               <DobuleTitle title='WHAT WE DO' mainTitle='SMART SOLUTIONS'></DobuleTitle>
 
-              <div className='p-3   space-x-7  mt-12 flex '>
+              <div className='p-3 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-4 max-sm:py-0    space-x-7  mt-12 flex '>
                 <ProductCard
                   url='/product/transfer-cart-agv'
                   image='/akilciHizmetler/TRANSFER ARABALARI2.png'
@@ -165,7 +165,7 @@ export default function Home() {
                   title='AUTOMATED STORAGE SYSTEMS (ASRS)'
                 ></ProductCard>
               </div>
-              <div className='p-3 space-x-7 mb-24  object-cover  flex   '>
+              <div className='p-3  max-sm:mt-5 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-4 max-sm:py-0  space-x-7 mb-24  object-cover  flex   '>
                 <ProductCard
                   url='/product/ergonomic-access-platforms'
                   image='/akilciHizmetler/prnomatik.png'
@@ -188,14 +188,14 @@ export default function Home() {
         <div className='w-full '>
           <WeServices></WeServices>
         </div>
-        <div className='mt-24 mb-24 flex items-center justify-center h-48  object-cover overflow-hidden'>
+        <div className=' max-sm:hidden mt-24 mb-24 flex items-center justify-center h-48  object-cover overflow-hidden'>
           <Image width={2000} height={2000} alt='asd' src='/hizmetAnlayisimiz/akisSema.png' className='w-3/4  '></Image>
         </div>
         <div className='flex p-5 shadow-xl  flex-col items-center justify-start  w-full  space-y-5 py-12'>
           <DobuleTitle title='WHAT IS NEW' mainTitle='NEWS '></DobuleTitle>
           <br></br>
 
-          <div className='  flex  items-center justify-center space-x-5  '>
+          <div className=' max-sm:flex-col  flex  items-center justify-center space-x-5  '>
             <NewsCard
               imageUrl='/a/yeni.jpg'
               title='
