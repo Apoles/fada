@@ -64,7 +64,7 @@ const News = () => {
       <Breadcrumb></Breadcrumb>
 
       {data ? (
-        <div className='space-y-12 font-tilt flex flex-col items-center justify-center  '>
+        <div className='  space-y-12 font-tilt flex flex-col items-center justify-center  '>
           <br></br>
 
           <DobuleTitle mainTitle={data.title}></DobuleTitle>
@@ -73,28 +73,27 @@ const News = () => {
 
           {data.product.map((e, key) => (
             <div
-              className='flex flex-col w-max p-16 rounded-2xl  bg-white shadow-2xl      items-center justify-center'
+              className='flex  max-sm:w-full  flex-col w-max p-16 rounded-2xl  bg-white shadow-2xl      items-center justify-center'
               key={key}
             >
-              <div className='flex flex-row  max-md:flex-col  items-start justify-center gap-8 '>
-                <div className='relative  rounded-3xl'>
+              <div className=' max-sm:flex-col  flex flex-row  max-md:flex-col  items-start justify-center gap-8 '>
+                <div className='relative   rounded-3xl'>
                   <Image
-                    className='object-cover   transition duration-300 hover:scale-105 '
+                    className='object-cover max-sm:w-72 max-sm:h-48   w-96  h-60 transition duration-300 hover:scale-105 '
                     src={e.imgUrl}
-                    style={{ width: 444, height: 320 }}
                     alt='alt'
                     width={1000}
                     height={1000}
                   ></Image>
                 </div>
 
-                <div style={{ width: '472px' }} className='  flex flex-col justify-center items-start space-y-3  '>
+                <div className=' max-sm:w-full max-sm:items-center flex w-96 flex-col justify-center items-start space-y-3  '>
                   <h2 className='text-xl font-semibold'>{e.title.toUpperCase()}</h2>
                   <p className='text-gray-600 text-sm  '>{e.description}</p>
-                  <div className='flex flex-row items-center justify-start '>
+                  <div className='flex  flex-row items-center justify-start '>
                     <button
                       type='button'
-                      className='text-gray-800 bg-white border-2 border-transparent duration-700 hover:border-wine-red  focus:ring-4 focus:outline-none focus:ring-wine-red font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 '
+                      className='text-gray-800 max-sm:py-0  bg-white border-2 border-transparent duration-700 hover:border-wine-red  focus:ring-4 focus:outline-none focus:ring-wine-red font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 '
                     >
                       <FontAwesomeIcon className='w-4 h-4 mr-1 -ml-1' size='1x' icon={faMessage}></FontAwesomeIcon>
                       <OfferCard></OfferCard>
@@ -112,12 +111,12 @@ const News = () => {
                 </div>
               </div>
 
-              <div className=''>
+              <div className=' max-sm:w-full    '>
                 <br></br>
                 <Titlee title='Özellikler'></Titlee>
                 <br></br>
-                <div className='max-w-4xl m-auto w-4/5  rounded-3xl p-8 bg-gradient-to-b from-gray-50 to-white '>
-                  <p className='mt-4 '> {e.description} </p>
+                <div className='max-w-4xl m-auto w-4/5 max-sm:w-full    rounded-3xl p-8 bg-gradient-to-b from-gray-50 to-white '>
+                  <p className='mt-4 max-sm:hidden'> {e.description} </p>
                   <br></br>
                   {e.propert.map((c, key) => (
                     <div className='' key={key}>
