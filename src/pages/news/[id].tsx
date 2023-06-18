@@ -75,7 +75,7 @@ const News = () => {
                 height={357}
               />
             </div>
-            <div className='md:7/12 lg:w-6/12'>
+            <div className='md:7/12 lg:w-6/12 '>
               <h2 className='text-xl text-gray-900  md:text-xl'>{data?.title} </h2>
               <p className='mt-6 text-gray-600'>{data?.description}</p>
             </div>
@@ -88,7 +88,7 @@ const News = () => {
 
       <DobuleTitle mainTitle='' title='Other News'></DobuleTitle>
 
-      <div className='w-full flex flex-row justify-center items-center gap-6 my-12'>
+      <div className='w-full flex flex-row justify-center items-center gap-6 my-12 max-md:flex-col'>
         <ImageCard title='deneme' description='We contunie export' imgUrl='/a/yeni.jpg'></ImageCard>
         <ImageCard title='deneme' description='Ready to serve on new plant' imgUrl='/a/yenii.jpg'></ImageCard>
         <ImageCard title='deneme' description='Custom solitions' imgUrl='/a/c.jpg'></ImageCard>

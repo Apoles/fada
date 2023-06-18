@@ -189,7 +189,7 @@ export default function Home() {
           <WeServices></WeServices>
         </div>
         <div className='mt-24 mb-24 flex items-center justify-center h-48  object-cover overflow-hidden'>
-          <Image alt='asd' src='/hizmetAnlayisimiz/akisSema.png' className='w-3/4  '></Image>
+          <Image width={2000} height={2000} alt='asd' src='/hizmetAnlayisimiz/akisSema.png' className='w-3/4  '></Image>
         </div>
         <div className='flex p-5 shadow-xl  flex-col items-center justify-start  w-full  space-y-5 py-12'>
           <DobuleTitle title='WHAT IS NEW' mainTitle='NEWS '></DobuleTitle>

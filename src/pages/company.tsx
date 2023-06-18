@@ -54,7 +54,7 @@ export default function Compnay() {
             ></Contact>
             <br></br>
             <br></br>
-            <div className='w-full h-23 flex flex-row space-x-20 items-center justify-center '>
+            <div className=' max-md:hidden  w-full h-23 flex flex-row space-x-20 items-center justify-center '>
               <Image alt='ad' className='h-14' width={50} height={50} src='/KALITE/FEM.png'></Image>
               <Image alt='ad' className='h-14' width={50} height={50} src='/KALITE/ISO.png'></Image>
               <Image alt='ad' className='h-14' width={50} height={50} src='/KALITE/ISO14001.png'></Image>

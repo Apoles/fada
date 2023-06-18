@@ -39,10 +39,10 @@ const News: React.FC = () => {
 
         <DobuleTitle mainTitle="WHAT'S NEW" title='NEWS'></DobuleTitle>
 
-        <div className='flex flex-col items-center justify-center '>
-          <div className='   grid grid-cols-3 p-4   justify rounded-xl  '>
+        <div className='flex   flex-col items-center justify-center '>
+          <div className='   grid grid-cols-3 p-4   justify rounded-xl  max-md:grid-cols-1 max-sm:mt-0  max-sm:mb-0  max-sm:items-center '>
             {data.map((e, key) => (
-              <div key={key} className=' mt-4'>
+              <div key={key} className=' mt-4 '>
                 <DoubleBorderCard
                   title={e.title}
                   imageUrl={e.imgUrl}
