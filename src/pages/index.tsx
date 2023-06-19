@@ -135,55 +135,42 @@ export default function Home() {
           <WhyFada></WhyFada>
         </div>
         <div className=''>
-          <ScrollAnimationWrapper>
-            <motion.div
-              variants={scrollAnimation}
-              className='  '
-              whileHover={{
-                scale: 1,
-                transition: {
-                  duration: 0.2,
-                },
-              }}
-            >
-              <DobuleTitle title='WHAT WE DO' mainTitle='SMART SOLUTIONS'></DobuleTitle>
+          <DobuleTitle title='WHAT WE DO' mainTitle='SMART SOLUTIONS'></DobuleTitle>
 
-              <div className='p-3 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-4 max-sm:py-0    space-x-7  mt-12 flex '>
-                <ProductCard
-                  url='/product/transfer-cart-agv'
-                  image='/akilciHizmetler/TRANSFER ARABALARI2.png'
-                  title="TRANSFER CART & AGV'S"
-                ></ProductCard>
-                <ProductCard
-                  url='/product/positioners-and-rotating-solutions'
-                  image='/akilciHizmetler/dondurme.png'
-                  title='POSITIONERS AND ROTATING SOLUTIONS'
-                ></ProductCard>
-                <ProductCard
-                  url='/product/automated-stroge-systems'
-                  image='/akilciHizmetler/otomatikDepolama.png'
-                  title='AUTOMATED STORAGE SYSTEMS (ASRS)'
-                ></ProductCard>
-              </div>
-              <div className='p-3  max-sm:mt-5 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-4 max-sm:py-0  space-x-7 mb-24  object-cover  flex   '>
-                <ProductCard
-                  url='/product/ergonomic-access-platforms'
-                  image='/akilciHizmetler/prnomatik.png'
-                  title='ERGONOMIC ACCESS PLATFORMS'
-                ></ProductCard>
-                <ProductCard
-                  url='/product/intralogistics-and-conveyor-solutions'
-                  image='/akilciHizmetler/unileted.jpg'
-                  title='INTRALOGISTICS & CONVEYOR SOLUTIONS'
-                ></ProductCard>
-                <ProductCard
-                  url='product/cranes-lifting-and-handling-equiments'
-                  image='/akilciHizmetler/cranes.jpg'
-                  title='CRANES / LIFTING & HANDLING EQUIPMENTS'
-                ></ProductCard>
-              </div>
-            </motion.div>
-          </ScrollAnimationWrapper>
+          <div className='p-3 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-4 max-sm:py-0    space-x-7   flex '>
+            <ProductCard
+              url='/product/transfer-cart-agv'
+              image='/akilciHizmetler/TRANSFER ARABALARI2.png'
+              title="TRANSFER CART & AGV'S"
+            ></ProductCard>
+            <ProductCard
+              url='/product/positioners-and-rotating-solutions'
+              image='/akilciHizmetler/dondurme.png'
+              title='POSITIONERS AND ROTATING SOLUTIONS'
+            ></ProductCard>
+            <ProductCard
+              url='/product/automated-stroge-systems'
+              image='/akilciHizmetler/otomatikDepolama.png'
+              title='AUTOMATED STORAGE SYSTEMS (ASRS)'
+            ></ProductCard>
+          </div>
+          <div className='p-3  max-sm:mt-5 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-4 max-sm:py-0  space-x-7 mb-24  object-cover  flex   '>
+            <ProductCard
+              url='/product/ergonomic-access-platforms'
+              image='/akilciHizmetler/prnomatik.png'
+              title='ERGONOMIC ACCESS PLATFORMS'
+            ></ProductCard>
+            <ProductCard
+              url='/product/intralogistics-and-conveyor-solutions'
+              image='/akilciHizmetler/unileted.jpg'
+              title='INTRALOGISTICS & CONVEYOR SOLUTIONS'
+            ></ProductCard>
+            <ProductCard
+              url='product/cranes-lifting-and-handling-equiments'
+              image='/akilciHizmetler/cranes.jpg'
+              title='CRANES / LIFTING & HANDLING EQUIPMENTS'
+            ></ProductCard>
+          </div>
         </div>
         <div className='w-full '>
           <WeServices></WeServices>
