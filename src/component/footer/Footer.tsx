@@ -74,7 +74,7 @@ export const Footer = () => {
               </Link>
             </p>
             <p>
-              <Link prefetch={false} href='#!' className='hover:text-wine-red dark:text-neutral-200'>
+              <Link prefetch={false} href='/contact' className='hover:text-wine-red dark:text-neutral-200'>
                 Contact
               </Link>
             </p>

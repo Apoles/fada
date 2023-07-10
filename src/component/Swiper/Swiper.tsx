@@ -39,15 +39,9 @@ const MainSwiper: React.FC<Props> = ({ slides }) => {
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
-          <div className='relative h-full flex items-center justify-center brightness-150	'>
+          <div className='relative h-full flex items-center justify-center brightness-150	max-sm:h-72'>
             <div className='absolute top-0 left-0 w-full h-full bg-black opacity-40'></div>
-            <Image
-              className='h-full w-full object-cover '
-              width={3000}
-              height={200}
-              src={slide.imageUrl}
-              alt={slide.title}
-            />
+            <Image className='h-full w-full    ' width={3000} height={200} src={slide.imageUrl} alt={slide.title} />
           </div>
         </SwiperSlide>
       ))}

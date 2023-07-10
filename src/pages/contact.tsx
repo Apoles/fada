@@ -48,10 +48,10 @@ const Contact5 = () => {
 
         <Breadcrumb></Breadcrumb>
 
-        <div className='container lg:px-12 p-6 py-0 mx-auto'>
-          <div className='lg:flex lg:items-center lg:-mx-1'>
-            <div className='lg:w-1/2 lg:mx-12'>
-              <h1 className='text-xl font-bold text-gray-700'>CONTACT</h1>
+        <div className='container lg:px-12 p-6 py-0 mx-auto '>
+          <div className='lg:flex lg:items-center lg:-mx-1 '>
+            <div className='lg:w-1/2 lg:mx-12   '>
+              <h1 className='text-xl font-bold    max-sm:py-6    text-gray-700'>CONTACT</h1>
 
               <div className='mt-6 space-y-8 md:mt-8'>
                 <p className='flex items-start -mx-2'>

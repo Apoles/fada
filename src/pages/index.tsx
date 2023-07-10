@@ -182,7 +182,7 @@ export default function Home() {
           <DobuleTitle title='WHAT IS NEW' mainTitle='NEWS '></DobuleTitle>
           <br></br>
 
-          <div className=' max-sm:flex-col  flex  items-center justify-center space-x-5  '>
+          <div className=' max-sm:flex-col max-sm:space-y-3   flex  items-center justify-center space-x-5  '>
             <NewsCard
               imageUrl='/a/yeni.jpg'
               title='

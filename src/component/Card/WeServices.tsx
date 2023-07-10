@@ -25,7 +25,7 @@ export const WeServices = () => {
           </div>
 
           <div className='max-sm:mt-4  lg:w-3/5  lg:pl-8 ml-12    space-y-5  flex-col flex items-center   '>
-            <div className='  '>
+            <div className='  max-sm:space-y-3  '>
               {' '}
               <div className=' flex items-center justify-center gap-4  max-w-lg p-6 max-sm:-ml-1 bg-white border border-gray-200 rounded-2xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
                 <Image alt='denemes' width={58} height={100} src={'/icon/worker.png'}></Image>
