@@ -102,14 +102,47 @@ export const HeaderBottom = () => {
       {data ? (
         <p className='hidden    '></p>
       ) : (
-        <div className='flex-col absolute top-0 left-0 p-8 h-full w-3/5 sm:hidden 	bg-white'>
-          <h2>Company</h2>
-          <a>About us</a>
-          <hr></hr>
-          <a>Contact us</a>
-          <hr></hr>
-          <a> Privacy Policy</a>
-        </div>
+        <nav className='sm:hidden bg-white border-gray-200 dark:bg-gray-900'>
+          <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+            <div className='  w-full md:block md:w-auto' id='navbar-default'>
+              <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+                <li>
+                  <Link href='/company'>
+                    {' '}
+                    <a className='block py-2 pl-3 pr-4 text-black rounded md:bg-transparent ' aria-current='page'>
+                      Company
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/product'>
+                    {' '}
+                    <a className='block py-2 pl-3 pr-4 text-black' aria-current='page'>
+                      Product
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/news'>
+                    {' '}
+                    <a className='block py-2 pl-3 pr-4 text-black ' aria-current='page'>
+                      News
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href='contact'>
+                    {' '}
+                    <a className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'>
+                      Contact
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       )}
       <motion.div
         className='progress-bar  top-0 left-0 right-0 h-0.5 origin-left sticky  z-30	 bg-[#960018] '
